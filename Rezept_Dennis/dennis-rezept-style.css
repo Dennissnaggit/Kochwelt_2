@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+}
+.Hero-rezept-dennis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.Hero-rezept-dennis img {
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.properties-dennis {
+  display: flex;
+  justify-content: flex-start;
+}
+.properties-items {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+  align-items: center;
+  background-color: rgb(239, 239, 239);
+  margin-top: 30px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 20px;
+}
+.properties-items img {
+  height: 18px;
+  width: 18px;
+  padding: 0;
+}
+.properties-items p {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  padding-left: 10px;
+  margin: 0;
+}
+.ingredients-dennis {
+  padding-left: 80px;
+  padding-right: 80px;
+  border-top: solid;
+  border-top: 2px;
+  margin-top: 50px;
+}
+.portionen-dennis {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#input-dennis {
+  all: unset;
+  border: solid;
+  border-width: 1px;
+  border-color: rgb(239, 239, 239);
+  padding: 7px 7px;
+  width: 150px;
+}
+
+.portionen-dennis button {
+  all: unset;
+  cursor: pointer;
+  background-color: rgb(49, 124, 26);
+  color: white;
+  font-family: "Raleway", sans-serif;
+  padding: 8px 34px;
+}
+.ingredients-list-dennis {
+  display: flex;
+}
+.ingredients-list-dennis li {
+  display: flex;
+  border-radius: 8px;
+  padding-left: 30px;
+}
+.grey {
+  background-color: rgb(239, 239, 239);
+}
+.ingredients-list-dennis ul {
+  flex: 1;
+  padding-left: 0;
+}
+.preparation {
+  max-width: 1440px;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.preparation h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 38;
+}
+.preparation-time {
+  display: flex;
+}
+.preperation-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-right: 20px;
+  background-color: rgb(239, 239, 239);
+  padding: 5px 10px;
+  align-items: center;
+  border-radius: 10px;
+  gap: 10px;
+}
+.preperation-icon img {
+  width: 15px;
+}
+.preperation-icon p {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+}
+.preparation p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+}
+.preparation h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+.creator {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.creator img {
+  width: 100px;
+}
+.creator p {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin-left: 25px;
+}
+.below320 {
+  display: none;
+}
+@media (max-width: 320px) {
+  .wrapper {
+    display: none;
+  }
+  .below320 {
+    display: flex;
+    margin: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .properties-dennis {
+    flex-direction: column;
+  }
+  .portionen-dennis {
+    flex-direction: column;
+  }
+  #input-dennis {
+    padding: 7px 18px;
+    width: 101.5px;
+  }
+  .preparation-time {
+    flex-direction: column;
+  }
+  .preperation-icon{
+    margin-bottom: 10px;
+  }
+  .creator {
+    flex-direction: column;
+  }
+}
