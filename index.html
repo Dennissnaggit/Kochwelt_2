@@ -1,90 +1,114 @@
 <!doctype html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Kochwelt</title>
+    <link rel="icon" href="./img/logo_small.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>Kochwelt</title>
-  <link rel="icon" href="./img/logo_small.png">
-</head>
+  <body>
+    <div class="box-shadow">
+      <header class="wrapper">
+        <a class="logo-header" href="index.html"
+          ><img src="./img/logo.png" alt="Logo"
+        /></a>
 
-<body>
-  <div class="box-shadow">
-    <header class="wrapper">
-      <a class="logo-header" href="index.html"><img src="./img/logo.png" alt="Logo"></a>
+        <div class="navMargin">
+          <nav>
+            <a id="header-aktiv" href="./index.html">Start</a>
+            <a href="/Kochwelt_2/Rezept_Dennis/dennis-rezept.html"
+              >Rezept des Tages</a
+            >
+            <a href="./contact.html">Kontakt</a>
+            <a href="./impressum.html">Impressum</a>
+          </nav>
+        </div>
+      </header>
+    </div>
 
-      <div class="navMargin">
-        <nav>
-          <a id="header-aktiv" href="./index.html">Start</a>
-          <a href="/Kochwelt_2/Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
-          <a href="./contact.html">Kontakt</a>
-          <a href="./impressum.html">Impressum</a>
-        </nav>
+    <section>
+      <div class="wrapper hero-section">
+        <img
+          class="hero-img"
+          src="/Kochwelt_2/Rezept_Dennis/img/aioli-light.jpg"
+          alt="hero-bild-rezept"
+        />
+        <div class="hero-text">
+          <h2>Aioli Light</h2>
+          <p>
+            Diese leichte Aioli ist die perfekte Alternative zur klassischen
+            Variante. Sie überzeugt mit cremiger Konsistenz und intensivem
+            Knoblauchgeschmack, enthält jedoch weniger Fett und wirkt angenehm
+            frisch. Ideal als Dip zu Gemüse, Brot oder als Sauce zu
+            Grillgerichten – schnell zubereitet und voller Geschmack bei weniger
+            Kalorien.
+          </p>
+          <a class="btn-a" href="/Kochwelt_2/Rezept_Dennis/dennis-rezept.html"><button class="btn">Rezept öffnen</button></a>
+        </div>
       </div>
-    </header>
-  </div>
-
-  <section>
-    <div class="wrapper hero-section">
-      <img class="hero-img" src="./img/wok.jpg" alt="hero-bild-rezept" />
-      <div class="hero-text">
-        <h2>Französische Croissants</h2>
+    </section>
+    <section class="bg-grey">
+      <div class="wrapper main-section">
+        <h2>Lust auf was Neues?</h2>
+        <div class="recipe-items">
+          <div class="recipe-item">
+            <img src="./img/wok.jpg" alt="Bild von einem Wok" />
+            <p>Beschreibung</p>
+          </div>
+          <div class="recipe-item">
+            <img src="./img/wok.jpg" alt="Bild von einem Wok" />
+            <p>Beschreibung</p>
+          </div>
+          <div class="recipe-item">
+            <img src="./img/wok.jpg" alt="Bild von einem Wok" />
+            <p>Beschreibung</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pan-vs-wok wrapper">
+      <h2>Die Freude am Kochen</h2>
+      <div class="align-article">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae alias
-          tenetur est iusto totam iure pariatur corrupti, eum a hic quis
-          eveniet quasi, nulla, repellendus quibusdam velit fugit ipsum
-          maxime!
+          Kochen ist mehr als nur die Zubereitung von Essen – es ist ein
+          kreativer Ausgleich im Alltag. Mit einfachen Zutaten lassen sich
+          leckere Gerichte zaubern, die nicht nur satt machen, sondern auch
+          Freude bereiten. Ob alleine oder gemeinsam: Selbst zu kochen schafft
+          besondere Momente und bringt Genuss direkt auf den Teller.
         </p>
-        <button class="btn">Rezept öffnen</button>
+        <img
+          class="img-wok"
+          src="/Kochwelt_2/Rezept_Dennis/img/freude-am-kochen.png"
+          alt="Wok"
+        />
       </div>
-    </div>
-  </section>
-  <section class="bg-grey">
-    <div class="wrapper main-section">
-      <h2>
-        Lust auf was Neues?
-      </h2>
-      <div class="recipe-items">
-        <div class="recipe-item">
-          <img src="./img/wok.jpg" alt="Bild von einem Wok">
-          <p>Beschreibung</p>
-        </div>
-        <div class="recipe-item">
-          <img src="./img/wok.jpg" alt="Bild von einem Wok">
-          <p>Beschreibung</p>
-        </div>
-        <div class="recipe-item">
-          <img src="./img/wok.jpg" alt="Bild von einem Wok">
-          <p>Beschreibung</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="pan-vs-wok wrapper">
-    <h2>Pfanne vs. Wok - Was ist besser?</h2>
-    <div class="align-article">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempore, quod qui culpa temporibus
-        aspernatur necessitatibus natus officia, quis, repellendus possimus odit veniam adipisci laborum deserunt
-        voluptatum. Ex, eveniet perferendis!</p>
-      <img class="img-wok" src="./img/wok.jpg" alt="Wok">
-    </div>
-  </section>
+    </section>
 
-  <div class="bg-footer">
-  <footer class="wrapper">
-    <div><a href="./index.html"><img src="./img/logo-blk.PNG" alt="logo"></a></div>
-    <div class="sozial-media-logos">
-      <a href=""><img class="sozial-media" src="./img/Facebook.PNG" alt=""></a>
-      <a href=""><img class="sozial-media" src="./img/Insta.PNG" alt=""></a>
-      <a href=""><img class="sozial-media" src="./img/Twitter.PNG" alt=""></a>
+    <div class="bg-footer">
+      <footer class="wrapper">
+        <div>
+          <a href="./index.html"><img src="./img/logo-blk.PNG" alt="logo" /></a>
+        </div>
+        <div class="sozial-media-logos">
+          <a href=""
+            ><img class="sozial-media" src="./img/Facebook.PNG" alt=""
+          /></a>
+          <a href=""
+            ><img class="sozial-media" src="./img/Insta.PNG" alt=""
+          /></a>
+          <a href=""
+            ><img class="sozial-media" src="./img/Twitter.PNG" alt=""
+          /></a>
+        </div>
+      </footer>
     </div>
-  </footer>
-  </div>
-</body>
-
+  </body>
 </html>

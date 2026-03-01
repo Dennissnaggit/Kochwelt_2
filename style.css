@@ -104,6 +104,9 @@ p {
 .hero-text button {
   margin-bottom: 40px;
 }
+.btn-a {
+  all: unset;
+}
 
 .btn {
   all: unset;
