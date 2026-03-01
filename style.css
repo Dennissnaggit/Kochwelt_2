@@ -36,6 +36,12 @@ header a:hover {
   text-decoration-thickness: 4px;
   text-underline-offset: 15px;
 }
+#header-aktiv {
+  color: rgb(0, 128, 0) !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 4px !important; 
+  text-underline-offset: 15px !important;
+}
 
 nav {
   margin-bottom: 10px;
