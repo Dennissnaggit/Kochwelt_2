@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dennis-rezept-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Aioli Light</title>
+  </head>
+  <body>
+    <h3 class="below320">"Deine Bildschirm ist leider zu klein :-("</h3>
+    <div class="wrapper">
+      <section class="Hero-rezept-dennis">
+        <h2>Aioli light</h2>
+        <img src="./img/aioli-light.jpg" alt="Aioli light" />
+        <div class="properties-dennis">
+          <div class="properties-items">
+            <img src="./img/clock-regular.svg" alt="Dauer" />
+            <p>15 min</p>
+          </div>
+          <div class="properties-items">
+            <img src="./img/brain-solid.svg" alt="Schwierigkeit" />
+            <p>leicht</p>
+          </div>
+          <div class="properties-items">
+            <img src="./img/calendar-alt-regular.svg" alt="von wann" />
+            <p>26.02.2026</p>
+          </div>
+        </div>
+      </section>
+      <section class="ingredients-dennis">
+        <div class="portionen-dennis">
+          <p>Zutanen für :</p>
+          <input
+            id="input-dennis"
+            type="number"
+            name=""
+            min="1"
+            max="20"
+            value="1"
+            required
+          />
+          <button onclick="ingredientsOutput()" class="btn">Portionen</button>
+          <p id="incorrect"></p>
+        </div>
+        <div class="ingredients-list-dennis">
+          <ul>
+            <li class="grey">
+              <p id="value0" class="portion-dennis">2</p>
+              <p>stk. Knoblauchzehen</p>
+            </li>
+            <li>
+              <p id="value1" class="portion-dennis">120</p>
+              <p>gr Mayonnaise</p>
+            </li>
+            <li class="grey">
+              <p id="value2" class="portion-dennis">100</p>
+              <p>gr Magerquark</p>
+            </li>
+            <li>
+              <p id="value3" class="portion-dennis">1/2</p>
+              <p>TL Salz</p>
+            </li>
+            <li class="grey">
+              <p id="value4" class="portion-dennis">1/4</p>
+              <p>TL Zucker</p>
+            </li>
+            <li>
+              <p id="value5" class="portion-dennis">1</p>
+              <p>TL Worcester-Sauce</p>
+            </li>
+            <li class="grey">
+              <p id="value6" class="portion-dennis">2</p>
+              <p>Spritzer Tabasco</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="preparation">
+        <h3>Zubereitung</h3>
+        <div class="preparation-time">
+          <div class="preperation-icon">
+            <img src="./img/clock-regular.svg" alt="clock" />
+            <p>ca. 15 Minuten</p>
+          </div>
+          <div class="preperation-icon">
+            <img src="./img/clock-regular.svg" alt="clock" />
+            <p>Gesamtzeit ca. 15min</p>
+          </div>
+        </div>
+        <div>
+          <p>
+            Die angegebenen Zutaten miteinander verrühren, den Knoblauch
+            hineinpressen, unterrühren und mindestens 4 Stunden ziehen lassen.
+            Dann einfach nur ohne schlechtes Gewissen genießen.
+          </p>
+        </div>
+        <div>
+          <h4>Rezept erstellt von</h4>
+        </div>
+        <div class="creator">
+          <img src="./img/brain-solid.svg" alt="Dennis" />
+          <p>Dennis</p>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="./dennis-rezept-script.js"></script>
+</html>
