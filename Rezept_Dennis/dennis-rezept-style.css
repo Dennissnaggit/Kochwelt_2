@@ -23,6 +23,8 @@ header a {
   color: black;
   text-decoration: none;
   align-content: center;
+  font-size: 24px;
+   font-family: "Raleway", sans-serif;
 }
 
 header a:hover {
@@ -67,6 +69,12 @@ h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 28px;
+}
+ p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: rgb(157, 166, 186);
 }
 .Hero-rezept-dennis {
   display: flex;
