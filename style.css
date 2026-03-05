@@ -18,7 +18,7 @@ header {
 }
 
 header img {
-  height: 84px;
+  max-height: 84px;
 }
 
 header a {
@@ -81,7 +81,8 @@ nav {
 }
 
 .hero-img {
-  width: 450px;
+  max-width: 450px;
+  max-height: 253px;
   border-radius: 10px;
 }
 
@@ -235,5 +236,26 @@ footer {
     height: 55px;
     margin-top: 30px;
     cursor: pointer;
+  }
+}
+@media (max-width: 950px) {
+  .hero-section {
+    flex-direction: column;
+  }
+  .recipe-items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .align-article {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media (max-width: 690px) {
+  header img {
+    height: 40px;
+  }
+  .hero-section {
+    padding: 50px 60px;
   }
 }
