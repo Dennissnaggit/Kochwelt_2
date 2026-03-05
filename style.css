@@ -190,3 +190,49 @@ footer {
 .sozial-media-logos {
   align-items: center;
 }
+.hamburger {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.hamburger img {
+  display: flex;
+  width: 200px;
+}
+.hamburger ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+.hamburger li {
+  all: unset;
+  padding-bottom: 20px;
+}
+.hamburger a {
+  all: unset;
+}
+.noneClass {
+  display: none;
+}
+.noneClassIcon{
+  display: none;
+}
+@media (max-width: 1090px) {
+  .navMargin{
+    display: none !important;
+  }
+  .noneClassIcon{
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 55px;
+    margin-top: 30px;
+  }
+}
