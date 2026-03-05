@@ -194,6 +194,7 @@ footer {
 .hamburger {
   position: absolute;
   right: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -221,6 +222,9 @@ footer {
   display: none;
 }
 .noneClassIcon{
+  display: none;
+}
+.below320 {
   display: none;
 }
 @media (max-width: 1090px) {
@@ -257,5 +261,32 @@ footer {
   }
   .hero-section {
     padding: 50px 60px;
+  }
+  .wrapper {
+    padding: 0 50px;
+  }
+  .footerClass {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 320px) {
+  .below320 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-shadow {
+    display: none;
+  }
+  .bg-grey {
+    display: none;
+  }
+  .hero-section {
+    display: none;
+  }
+  .wrapper {
+    display: none;
   }
 }
