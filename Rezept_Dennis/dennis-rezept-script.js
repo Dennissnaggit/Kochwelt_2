@@ -1,3 +1,4 @@
+const hamburgerMenu = document.getElementById("hamburgerMenu");
 const ingredients = [ 2, 120, 100, 0.5, 0.25, 1, 2 ];
 const multiply = document.getElementById("input-dennis");
 const newArray = [];
@@ -20,4 +21,10 @@ for (const ingredient of ingredients) {
     document.getElementById("incorrect").innerHTML = "Bitte einen Wert zwischen 1 und 20 angeben"
 }
 }
+
+
+function openClose() {
+    hamburgerMenu.classList.toggle("noneClass");
+}
+
 
