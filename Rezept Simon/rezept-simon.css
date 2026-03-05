@@ -68,6 +68,11 @@ nav {
     padding-top: 50px;
 }
 
+h2 {
+    font-weight: 500;
+    font-size: 28px;
+}
+
 .top-section-img {
     height: 200px;
     width: 100%;
@@ -81,10 +86,11 @@ nav {
     margin-top: 24px;
 }
 
-.top-section span {
+.information-field {
     padding: 8px;
     border-radius: 5px;
     background-color: #efefef;
+    font-family: "Raleway", sans-serif;
     display: flex;
     gap: 8px
 }
@@ -97,17 +103,112 @@ nav {
 .separate-line {
     height: 1px;
     background-color: #efefef;
+    font-family: "Raleway", sans-serif;
     margin-top: 64px;
     margin-bottom: 16px;
+}
+
+span {
+    color: #191a19;
+    font-family: "Raleway", sans-serif;
+}
+
+.ingredients {
+    display: flex;
+    align-items: center;
 }
 
 input {
     width: 150px;
     height: 28px;
+    margin-left: 16px;
+    border: 0.5px solid #efefef;
 }
 
 button {
     all: unset;
     padding: 8px 34px;
     background-color: #008000;
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
+
+button:hover {
+    background-color: #006e00;
+}
+
+td,
+th {
+    border-radius: 7px;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(odd) {
+    background-color: #efefef;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.txt-color {
+    color: #3d3d3d;
+    font-family: "Raleway", sans-serif;
+}
+
+span {
+    color: #3d3d3d;
+    font-family: "Raleway", sans-serif;
+}
+
+h3 {
+    margin-top: 32px;
+}
+
+article p {
+    margin-top: 32px;
+}
+
+h4 {
+    margin-top: 32px;
+}
+
+.profile-img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+    gap: 40px;
+}
+
+figcaption {
+    font-size: 24px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 120px;
+}
+
+.bg-footer {
+    background-color: rgb(35, 35, 35);
+}
+
+.sozial-media {
+    height: 37px;
+    width: auto;
+}
+
+.sozial-media-logos {
+    align-content: center;
 }
