@@ -234,5 +234,6 @@ footer {
     padding: 5px;
     height: 55px;
     margin-top: 30px;
+    cursor: pointer;
   }
 }
