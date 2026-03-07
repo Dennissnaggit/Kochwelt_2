@@ -12,119 +12,138 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
     <script src="rezept-simon.js"></script>
+    <script src="menu.js"></script>
 </head>
 
 <body onload="calculate()"> <!-- onload *4 -->
+    <main>
+        <div class="box-shadow">
+            <header class="wrapper">
+                <a class="logo-header" href="index.html"><img src="./img/logo.png" alt="Logo" /></a>
 
-    <div class="box-shadow">
-        <header class="wrapper">
-            <a class="logo-header" href="index.html"><img src="./img/logo.png" alt="Logo" /></a>
+                <div class="navMargin">
+                    <nav>
+                        <a id="header-aktiv" href="/index.html">Start</a>
+                        <a href="/Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
+                        <a href="/Kontaktformular/contact.html">Kontakt</a>
+                        <a href="/Impressum/impressum.html">Impressum</a>
+                    </nav>
 
-            <div class="navMargin">
-                <nav>
-                    <a id="header-aktiv" href="/index.html">Start</a>
-                    <a href="/Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
-                    <a href="/Kontaktformular/contact.html">Kontakt</a>
-                    <a href="/Impressum/impressum.html">Impressum</a>
-                </nav>
-            </div>
-        </header>
-    </div>
+                    <button onclick="toggleMenu()" class="menu-button"><img class="menu-img" src="./img/menu.png"
+                            alt=""></button>
 
-    <div class="side-padding wrapper">
-        <section class="top-section">
-            <h2>Möhreneintopf</h2>
-            <img class="top-section-img" src="./img/Möhreneintopf.PNG" alt="">
+                    <div id="resp-menu" class="resp-menu-box resp-menu-closed">
+                        <img src="./img/logo.png" alt="logo">
+                        <a id="header-aktiv" href="/index.html">Start</a>
+                        <a href="/Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
+                        <a href="/Kontaktformular/contact.html">Kontakt</a>
+                        <a href="/Impressum/impressum.html">Impressum</a>
+                        <button class="close-menu-button" onclick="toggleMenu()">Close Menu</button>
+                    </div>
+
+
+                </div>
+            </header>
+        </div>
+
+        <div class="side-padding wrapper">
+            <section class="top-section">
+                <h2>Möhreneintopf</h2>
+                <img class="top-section-img" src="./img/Möhreneintopf.PNG" alt="">
+                <div class="side-informations">
+                    <span class="information-field"><img class="icons-instruction-information"
+                            src="./img/clock-regular.svg" alt="">15 Min.</span>
+                    <span class="information-field"><img class="icons-instruction-information"
+                            src="./img/brain-solid.svg" alt="">simpel</span>
+                    <span class="information-field"><img class="icons-instruction-information"
+                            src="./img/calendar-alt-regular.svg" alt="">01.03.2026</span>
+                </div>
+            </section>
+
+            <div class="separate-line"></div>
+
+            <section class="ingredients">
+                <span>Zutaten für</span>
+                <input id="portions" type="number" min="1" max="10" value="4">
+                <button class="button-calculate" onclick="calculate()">Portionen</button>
+
+            </section>
+            <table class="txt-color">
+                <tr>
+                    <td><span id="value1">150</span>g Möhren</td>
+                </tr>
+                <tr>
+                    <td><span id="value2">150</span>g Kartoffeln</td>
+                </tr>
+                <tr>
+                    <td><span id="value3">0.25</span> Zwiebeln</td>
+                </tr>
+                <tr>
+                    <td><span id="value4">0.25</span>EL Butter</td>
+                </tr>
+                <tr>
+                    <td><span id="value5">150</span>ml Gemüsebrühe</td>
+                </tr>
+                <tr>
+                    <td><span id="value6">1</span> Mettwürstchen</td>
+                </tr>
+                <tr>
+                    <td><span id="value7">0.25</span>TL Sonnenblumenöl</td>
+                </tr>
+                <tr>
+                    <td><span id="value8">0.75</span> Zweige krause Petersilie</td>
+                </tr>
+                <tr>
+                    <td><span id="value9">0.5</span>EL Sahne</td>
+                </tr>
+                <tr>
+                    <td>Muskat</td>
+                </tr>
+                <tr>
+                    <td>Pfeffer</td>
+                </tr>
+                <tr>
+                    <td>Zucker</td>
+                </tr>
+                <tr>
+                    <td>Salz</td>
+                </tr>
+            </table>
+
+            <h3>Zubereitung</h3>
             <div class="side-informations">
                 <span class="information-field"><img class="icons-instruction-information" src="./img/clock-regular.svg"
-                        alt="">15 Min.</span>
-                <span class="information-field"><img class="icons-instruction-information" src="./img/brain-solid.svg"
-                        alt="">simpel</span>
-                <span class="information-field"><img class="icons-instruction-information"
-                        src="./img/calendar-alt-regular.svg" alt="">01.03.2026</span>
+                        alt="">ca. 20 Minuten</span>
+                <span class="information-field"><img class="icons-instruction-information" src="./img/clock-regular.svg"
+                        alt="">Gesamtzeit ca. 45 Minuten</span>
             </div>
-        </section>
+            <article>
+                <p class="txt-color">Möhren schälen und in Scheiben schneiden. Kartoffeln schälen und in Würfel
+                    schneiden.
+                    Zwiebel schälen und fein würfeln.
+                    Butter in einem Topf auslassen und Zwiebeln darin glasig anschwitzen. Möhren dazugeben und ebenfalls
+                    anschwitzen. Mit Salz und einer Prise Zucker würzen und leicht karamellisieren. Die Kartoffeln
+                    dazugeben
+                    und ebenfalls kurz anschwitzen. Mit Brühe ablöschen und bei geringer Hitze und geschlossenem Deckel
+                    25
+                    Minuten köcheln lassen.
+                    Mettwürstchen in Scheiben schneiden und in einer Pfanne mit Öl anbraten. Die Mettenden zum Ende der
+                    Kochzeit in den Topf mit den Möhren geben. Mit Pfeffer, Muskat und Sahne und abschmecken.
+                    Petersilie waschen, trocken schütteln und fein hacken. Petersilie in den Eintopf geben und
+                    servieren.
+                </p>
+            </article>
 
-        <div class="separate-line"></div>
+            <section>
+                <h4>Rezept erstellt von</h4>
+                <figure>
+                    <img class="profile-img" src="./img/profile-img.jpg" alt="imgCreator">
+                    <figcaption class="txt-color">Simon</figcaption>
+                </figure>
+            </section>
 
-        <section class="ingredients">
-            <span>Zutaten für</span>
-            <input id="portions" type="number" min="1" max="10" value="4">
-            <button onclick="calculate()">Portionen</button>
-
-        </section>
-        <table class="txt-color">
-            <tr>
-                <td><span id="value1">150</span>g Möhren</td>
-            </tr>
-            <tr>
-                <td><span id="value2">150</span>g Kartoffeln</td>
-            </tr>
-            <tr>
-                <td><span id="value3">0.25</span> Zwiebeln</td>
-            </tr>
-            <tr>
-                <td><span id="value4">0.25</span>EL Butter</td>
-            </tr>
-            <tr>
-                <td><span id="value5">150</span>ml Gemüsebrühe</td>
-            </tr>
-            <tr>
-                <td><span id="value6">1</span> Mettwürstchen</td>
-            </tr>
-            <tr>
-                <td><span id="value7">0.25</span>TL Sonnenblumenöl</td>
-            </tr>
-            <tr>
-                <td><span id="value8">0.75</span> Zweige krause Petersilie</td>
-            </tr>
-            <tr>
-                <td><span id="value9">0.5</span>EL Sahne</td>
-            </tr>
-            <tr>
-                <td>Muskat</td>
-            </tr>
-            <tr>
-                <td>Pfeffer</td>
-            </tr>
-            <tr>
-                <td>Zucker</td>
-            </tr>
-            <tr>
-                <td>Salz</td>
-            </tr>
-        </table>
-
-        <h3>Zubereitung</h3>
-        <div class="side-informations">
-            <span class="information-field"><img class="icons-instruction-information" src="./img/clock-regular.svg"
-                    alt="">ca. 20 Minuten</span>
-            <span class="information-field"><img class="icons-instruction-information" src="./img/clock-regular.svg"
-                    alt="">Gesamtzeit ca. 45 Minuten</span>
         </div>
-        <article>
-            <p class="txt-color">Möhren schälen und in Scheiben schneiden. Kartoffeln schälen und in Würfel schneiden.
-                Zwiebel schälen und fein würfeln.
-                Butter in einem Topf auslassen und Zwiebeln darin glasig anschwitzen. Möhren dazugeben und ebenfalls
-                anschwitzen. Mit Salz und einer Prise Zucker würzen und leicht karamellisieren. Die Kartoffeln dazugeben
-                und ebenfalls kurz anschwitzen. Mit Brühe ablöschen und bei geringer Hitze und geschlossenem Deckel 25
-                Minuten köcheln lassen.
-                Mettwürstchen in Scheiben schneiden und in einer Pfanne mit Öl anbraten. Die Mettenden zum Ende der
-                Kochzeit in den Topf mit den Möhren geben. Mit Pfeffer, Muskat und Sahne und abschmecken.
-                Petersilie waschen, trocken schütteln und fein hacken. Petersilie in den Eintopf geben und servieren.
-            </p>
-        </article>
-
-        <section>
-            <h4>Rezept erstellt von</h4>
-            <figure>
-                <img class="profile-img" src="./img/profile-img.jpg" alt="imgCreator">
-                <figcaption class="txt-color">Simon</figcaption>
-            </figure>
-        </section>
-
-    </div>
-
+    </main>
     <div class="bg-footer">
         <footer class="wrapper">
             <div>
