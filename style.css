@@ -196,7 +196,7 @@ footer {
 }
 
 .sozial-media-logos {
-  align-items: center;
+  align-content: center;
 }
 .hamburger {
   position: absolute;
