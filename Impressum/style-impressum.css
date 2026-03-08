@@ -1,7 +1,15 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
+
 body {
   margin: 0;
   padding: 0;
+  font-family: "Raleway", sans-serif;
 }
+
 header {
   height: 120px;
   display: flex;

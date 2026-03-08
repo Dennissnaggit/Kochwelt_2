@@ -7,10 +7,6 @@
     <title>Möhreneintopf</title>
     <link rel="icon" href="./img/logo_small.png">
     <link rel="stylesheet" href="rezept-simon.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
     <script src="rezept-simon.js"></script>
     <script src="menu.js"></script>
 </head>
@@ -29,7 +25,7 @@
                         <a href="/Impressum/impressum.html">Impressum</a>
                     </nav>
 
-                    <button onclick="toggleMenu()" class="menu-button"><img class="menu-img" src="./img/menu.png"
+                    <button onclick="toggleMenu()" class="menu-button"><img class="menu-img" src="/img/menu.png"
                             alt=""></button>
 
                     <div id="resp-menu" class="resp-menu-box resp-menu-closed">
@@ -64,8 +60,10 @@
 
             <section class="ingredients">
                 <span>Zutaten für</span>
-                <input id="portions" type="number" min="1" max="10" value="4">
-                <button class="button-calculate" onclick="calculate()">Portionen</button>
+                <form>
+                    <input id="portions" type="number" min="1" max="10" value="4">
+                    <button class="button-calculate" onclick="calculate()">Portionen</button>
+                </form>
 
             </section>
             <table class="txt-color">
