@@ -60,7 +60,7 @@
 
             <section class="ingredients">
                 <span>Zutaten für</span>
-                <form>
+                <form onsubmit="calculate(); return false;">
                     <input id="portions" type="number" min="1" max="10" value="4">
                     <button class="button-calculate" onclick="calculate()">Portionen</button>
                 </form>
