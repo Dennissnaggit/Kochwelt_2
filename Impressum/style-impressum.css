@@ -99,6 +99,15 @@ footer {
   background-color: rgb(35, 35, 35);
 }
 
+.link-datenschutz a {
+  color: rgb(0, 128, 0);
+  text-decoration: none;
+}
+
+.link-datenschutz a:hover {
+ color: rgb(2, 90, 2);
+}
+
 .sozial-media {
   height: 37px;
   width: auto;
