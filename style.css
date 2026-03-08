@@ -217,6 +217,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 0;
+  cursor: pointer;
 }
 .hamburger li {
   all: unset;

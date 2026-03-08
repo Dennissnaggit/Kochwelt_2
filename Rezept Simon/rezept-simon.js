@@ -14,6 +14,11 @@
 
 function calculate() {
     let neuePortionen = document.getElementById("portions").value;
+
+    if (neuePortionen < 1 || neuePortionen > 10) {
+        alert("Bitte geben Sie eine Zahl zwischen 1 und 10 ein.");
+        return;
+    }
     
     let möhrenNeu = möhren * neuePortionen;
     let kartoffelnNeu = kartoffeln * neuePortionen;
