@@ -3,33 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./style.css" />
     <title>Kochwelt</title>
+    <link rel="icon" href="kochwelt_2/" />
     <link rel="icon" href="./img/logo_small.png" />
   </head>
 
   <body>
+    <h4 class="below320">Dein Bildschirm ist leider zu klein :-(</h4>
+    <div id="hamburgerMenu" class="hamburger noneClass">
+      <a href="/index.html"><img src="/img/logo.png" alt="" /></a>
+      <ul>
+        <li><a href="./index.html">Start</a></li>
+        <li>
+          <a href="./Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
+        </li>
+        <li><a href="/Kontaktformular/contact.html">Kontakt</a></li>
+        <li><a href="/Impressum/impressum.html">Impressum</a></li>
+      </ul>
+      <button onclick="openClose()" class="btn">close</button>
+    </div>
     <div class="box-shadow">
       <header class="wrapper">
         <a class="logo-header" href="index.html"
           ><img src="./img/logo.png" alt="Logo"
         /></a>
-
         <div class="navMargin">
           <nav>
-            <a id="header-aktiv" href="./index.html">Start</a>
-            <a href="/Kochwelt_2/Rezept_Dennis/dennis-rezept.html"
-              >Rezept des Tages</a>
-            <a href="./contact.html">Kontakt</a>
-            <a href="/Kochwelt_2/Impressum/impressum.html">Impressum</a>
+            <a id="header-aktiv" href="/index.html">Start</a>
+            <a href="/Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
+            <a href="/Kontaktformular/contact.html">Kontakt</a>
+            <a href="/Impressum/impressum.html">Impressum</a>
           </nav>
         </div>
+        <button onclick="openClose()" class="noneClassIcon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <rect y="4" width="24" height="2" fill="black" />
+            <rect y="11" width="24" height="2" fill="black" />
+            <rect y="18" width="24" height="2" fill="black" />
+          </svg>
+        </button>
       </header>
     </div>
 
@@ -37,9 +50,8 @@
       <div class="wrapper hero-section">
         <img
           class="hero-img"
-          src="/Kochwelt_2/Rezept_Dennis/img/aioli-light.jpg"
-          alt="hero-bild-rezept"
-        />
+          src="/Rezept_Dennis/img/aioli-light.jpg"
+          alt="hero-bild-rezept"/>
         <div class="hero-text">
           <h2>Aioli Light</h2>
           <p>
@@ -50,7 +62,7 @@
             Grillgerichten – schnell zubereitet und voller Geschmack bei weniger
             Kalorien.
           </p>
-          <a class="btn-a" href="/Kochwelt_2/Rezept_Dennis/dennis-rezept.html"
+          <a class="btn-a" href="/Rezept_Dennis/dennis-rezept.html"
             ><button class="btn">Rezept öffnen</button></a
           >
         </div>
@@ -61,8 +73,8 @@
         <h2>Lust auf was Neues?</h2>
         <div class="recipe-items">
           <div class="recipe-item">
-            <img src="./img/wok.jpg" alt="Bild von einem Wok" />
-            <p>Beschreibung</p>
+            <a href="./Rezept Simon/rezept-simon.html"><img src="./Rezept Simon/img/Möhreneintopf.PNG" alt="Bild von einem Wok" /></a>
+            <p>Möhreneintopf</p>
           </div>
           <div class="recipe-item">
             <img src="./img/wok.jpg" alt="Bild von einem Wok" />
@@ -87,14 +99,14 @@
         </p>
         <img
           class="img-wok"
-          src="/Kochwelt_2/Rezept_Dennis/img/freude-am-kochen.png"
+          src="/Rezept_Dennis/img/freude-am-kochen.png"
           alt="Wok"
         />
       </div>
     </section>
 
     <div class="bg-footer">
-      <footer class="wrapper">
+      <footer class="wrapper footerClass">
         <div>
           <a href="./index.html"><img src="./img/logo-blk.PNG" alt="logo" /></a>
         </div>
@@ -112,4 +124,5 @@
       </footer>
     </div>
   </body>
+  <script src="/script.js"></script>
 </html>

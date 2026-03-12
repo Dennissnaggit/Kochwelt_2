@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <title>Palatschinken</title>
+  <link rel="stylesheet" href="./rezept-andreas.css">
+  <link rel="icon" href="./img/logo_small.png" />
+</head>
+
+<body>
+  <div class="box-shadow">
+    <header class="wrapper">
+      <a class="logo-header" href="index.html"><img src="./img/logo.png" alt="Logo" /></a>
+
+      <div class="navMargin">
+        <nav>
+          <a id="header-aktiv" href="./index.html">Start</a>
+          <a href="/Kochwelt_2/Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
+          <a href="./contact.html">Kontakt</a>
+          <a href="/Kochwelt_2/Impressum/impressum.html">Impressum</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <main class="wrapper">
+    <h2>Palatschinken</h2>
+    <img class="picture-size" src="./img/palatschinken.jpg" alt="Bild von Palatschinken">
+    <div class="declarations">
+      <p class="declarations-button"><img class="img-size" src="./img/clock-regular.svg" alt="Zeit"> 30 Min</p>
+      <p class="declarations-button"><img class="img-size" src="./img/brain-solid.svg" alt="Schwirigkeit">Leicht</p>
+      <p class="declarations-button"><img class="img-size" src="./img/calendar-alt-regular.svg" alt=""><span id="date"></span></p>
+    </div>
+    <div class="line"></div>
+    <div class="label">
+        <p>Zutaten für:</p>
+        <label for="">
+            <input class="number" id="number-of-people" type="number" min="1" max="10" value="1"><input class="portions" onclick="anzahl()" type="button" value="Portionen">
+        </label>
+    </div>
+    <table>
+        <tr>
+            <td id="spagetti">
+                500
+            </td>
+            <td>
+                spagetti
+            </td>
+        </tr>
+        <tr>
+            <td id="tomaten">
+                2
+            </td>
+            <td>
+                tomaten
+            </td>
+        </tr>
+        <tr>
+            <td id="knoblauch">
+                5
+            </td>
+            <td>
+                knoblauch
+            </td>
+        </tr>
+
+    </table>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bg-footer">
+    <footer class="wrapper">
+      <div>
+        <a href="./index.html"><img src="./img/logo-blk.PNG" alt="logo" /></a>
+      </div>
+      <div class="sozial-media-logos">
+        <a href=""><img class="sozial-media" src="./img/Facebook.PNG" alt="" /></a>
+        <a href=""><img class="sozial-media" src="./img/Insta.PNG" alt="" /></a>
+        <a href=""><img class="sozial-media" src="./img/Twitter.PNG" alt="" /></a>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="./rezept-andreas.js"></script>
+
+</html>

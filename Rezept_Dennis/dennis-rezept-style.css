@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -136,7 +142,15 @@ h2 {
   padding: 7px 7px;
   width: 150px;
 }
-
+.btn{
+  all: unset;
+  cursor: pointer;
+  background-color: rgb(49, 124, 26);
+  color: white;
+  text-align: center;
+  width: 200px;
+  padding: 8px 12px;
+}
 .portionen-dennis button {
   all: unset;
   cursor: pointer;
@@ -248,6 +262,75 @@ footer {
 .sozial-media-logos {
   align-items: center;
 }
+.hamburger {
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.hamburger img {
+  display: flex;
+  width: 200px;
+}
+.hamburger ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+.hamburger li {
+  all: unset;
+  padding-bottom: 20px;
+}
+.hamburger a {
+  all: unset;
+}
+.noneClass {
+  display: none;
+}
+.noneClassIcon{
+  display: none;
+}
+@media (max-width: 1090px) {
+  .navMargin{
+    display: none !important;
+  }
+  .noneClassIcon{
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 55px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 950px) {
+  .hero-section {
+    flex-direction: column;
+  }
+  .recipe-items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .align-article {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media (max-width: 690px) {
+  header img {
+    height: 40px;
+  }
+  .hero-section {
+    padding: 50px 60px;
+  }
+}
 @media (max-width: 320px) {
   .wrapper {
     display: none;
@@ -257,6 +340,13 @@ footer {
     margin: 20px;
     text-align: center;
   }
+   .box-shadow {
+    display: none;
+  }
+  .bg-footer {
+    display: none;
+  }
+
 }
 @media (max-width: 500px) {
   .properties-dennis {
@@ -277,5 +367,12 @@ footer {
   }
   .creator {
     flex-direction: column;
+  }
+  .footerclass{
+    padding: 0 50px;
+    flex-direction: column;
+  }
+  .wrapper_1 {
+    padding: 0 50px;
   }
 }

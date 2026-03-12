@@ -1,11 +1,14 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
+
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
 }
 
-body {
-  margin: 0;
-}
 
 header {
   height: 120px;
@@ -21,7 +24,7 @@ header {
 }
 
 header img {
-  height: 84px;
+  max-height: 84px;
 }
 
 header a {
@@ -84,7 +87,8 @@ nav {
 }
 
 .hero-img {
-  width: 450px;
+  max-width: 450px;
+  max-height: 253px;
   border-radius: 10px;
 }
 
@@ -144,6 +148,7 @@ p {
   width: 200px;
   height: 200px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .recipe-item p {
@@ -191,5 +196,105 @@ footer {
 }
 
 .sozial-media-logos {
+  align-content: center;
+}
+.hamburger {
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.hamburger img {
+  display: flex;
+  width: 200px;
+}
+.hamburger ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+}
+.hamburger li {
+  all: unset;
+  padding-bottom: 20px;
+}
+.hamburger a {
+  all: unset;
+}
+.noneClass {
+  display: none;
+}
+.noneClassIcon{
+  display: none;
+}
+.below320 {
+  display: none;
+}
+@media (max-width: 1090px) {
+  .navMargin{
+    display: none !important;
+  }
+  .noneClassIcon{
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 55px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 950px) {
+  .hero-section {
+    flex-direction: column;
+  }
+  .recipe-items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .align-article {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media (max-width: 690px) {
+  header img {
+    height: 40px;
+  }
+  .hero-section {
+    padding: 50px 60px;
+  }
+  .wrapper {
+    padding: 0 50px;
+  }
+  .footerClass {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 320px) {
+  .below320 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-shadow {
+    display: none;
+  }
+  .bg-grey {
+    display: none;
+  }
+  .hero-section {
+    display: none;
+  }
+  .wrapper {
+    display: none;
+  }
 }
