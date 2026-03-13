@@ -1,8 +1,8 @@
-let menge = [500, 2, 5]
-let zutat = ['spagetti', 'tomaten', 'knoblauch']
-let today = new Date();
+let menge = [75, 125, 1]
+let zutat = ['mehl', 'milch', 'eier']
+/*let today = new Date();
 let formattedDate = today.toLocaleDateString('de-DE');
-document.getElementById('date').innerHTML = formattedDate;
+document.getElementById('date').innerHTML = formattedDate;*/
 
 function anzahl() {
     for (let a = 0; a < menge.length; a++) {
