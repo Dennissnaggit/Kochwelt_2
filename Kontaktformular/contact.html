@@ -11,58 +11,59 @@
 </head>
 
 <body>
-    <div class="box-shadow">
-        <header class="wrapper">
-            <a class="logo-header" href="/index.html"><img src="../img/logo.png" alt="Logo" /></a>
+    <div class="overflow">
+        <div class="box-shadow">
+            <header class="wrapper">
+                <a class="logo-header" href="/index.html"><img src="../img/logo.png" alt="Logo" /></a>
 
-            <div class="navMargin">
-                <nav>
-                    <a id="header-aktiv" href="../index.html">Start</a>
-                    <a href="../Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
-                    <a href="../Kontaktformular/contact.html">Kontakt</a>
-                    <a href="../Impressum/impressum.html">Impressum</a>
-                </nav>
+                <div class="navMargin">
+                    <nav>
+                        <a id="header-aktiv" href="../index.html">Start</a>
+                        <a href="../Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
+                        <a href="../Kontaktformular/contact.html">Kontakt</a>
+                        <a href="../Impressum/impressum.html">Impressum</a>
+                    </nav>
 
-                <button onclick="toggleMenu()" class="menu-button"><img class="menu-img" src="/img/menu.png"
-                        alt=""></button>
+                    <button onclick="toggleMenu()" class="menu-button"><img class="menu-img" src="/img/menu.png"
+                            alt=""></button>
 
-                <div id="resp-menu" class="resp-menu-box resp-menu-closed">
-                    <img src="/img/logo.png" alt="logo">
-                    <a id="header-aktiv" href="/index.html">Start</a>
-                    <a href="/Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
-                    <a href="/Kontaktformular/contact.html">Kontakt</a>
-                    <a href="/Impressum/impressum.html">Impressum</a>
-                    <button class="close-menu-button" onclick="toggleMenu()">Close Menu</button>
+                    <div id="resp-menu" class="resp-menu-box resp-menu-closed">
+                        <img src="/img/logo.png" alt="logo">
+                        <a id="header-aktiv" href="/index.html">Start</a>
+                        <a href="/Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
+                        <a href="/Kontaktformular/contact.html">Kontakt</a>
+                        <a href="/Impressum/impressum.html">Impressum</a>
+                        <button class="close-menu-button" onclick="toggleMenu()">Close Menu</button>
+                    </div>
+
                 </div>
+            </header>
+        </div>
 
-            </div>
-        </header>
+        <div class="align-main">
+            <main>
+                <h2>Kontaktiere uns</h2>
+                <form onsubmit="sendMail(event)">
+                    <div class="fs-field">
+                        <label class="fs-label" for="name">Dein Name:</label>
+                        <input class="fs-input" id="name" name="name" required />
+                    </div>
+                    <div class="fs-field">
+                        <label class="fs-label" for="email">Deine Email:</label>
+                        <input class="fs-input" id="email" name="email" required />
+
+                    </div>
+                    <div class="fs-field">
+                        <label class="fs-label" for="message">Deine Nachricht:</label>
+                        <textarea class="fs-textarea" rows="8" id="message" name="message" required></textarea>
+                    </div>
+                    <div class="fs-button-group">
+                        <button class="fs-button" type="submit">Submit</button>
+                    </div>
+                </form>
+            </main>
+        </div>
     </div>
-
-    <div class="align-main">
-        <main>
-            <h2>Kontaktiere uns</h2>
-            <form onsubmit="sendMail(event)">
-                <div class="fs-field">
-                    <label class="fs-label" for="name">Dein Name:</label>
-                    <input class="fs-input" id="name" name="name" required />
-                </div>
-                <div class="fs-field">
-                    <label class="fs-label" for="email">Deine Email:</label>
-                    <input class="fs-input" id="email" name="email" required />
-
-                </div>
-                <div class="fs-field">
-                    <label class="fs-label" for="message">Deine Nachricht:</label>
-                    <textarea class="fs-textarea" rows="8" id="message" name="message" required></textarea>
-                </div>
-                <div class="fs-button-group">
-                    <button class="fs-button" type="submit">Submit</button>
-                </div>
-            </form>
-        </main>
-    </div>
-
     <div class="bg-footer">
         <footer class="wrapper">
             <div>

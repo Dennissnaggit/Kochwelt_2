@@ -516,7 +516,7 @@ footer {
     transform: translateX(200%);
 }
 
-body {
+.overflow {
     position: relative;
     overflow-x: hidden;
 }
