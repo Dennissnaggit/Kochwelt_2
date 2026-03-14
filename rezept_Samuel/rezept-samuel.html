@@ -16,31 +16,29 @@
     <link rel="stylesheet" href="rezept-samuel.css" />
   </head>
   <body>
-  
     <div id="hamburgerMenu" class="hamburger noneClass">
-      <a href="http://"><img src="/img/logo.png" alt="" /></a>
+      <a href="/index.html"><img src="/img/logo.png" alt="" /></a>
       <ul>
-        <li><a href="/index.html">Start</a></li>
-        <li><a href="./rezept-samuel.html">Rezept des Tages</a></li>
+        <li><a href="./index.html">Start</a></li>
+        <li>
+          <a href="./Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
+        </li>
         <li><a href="/Kontaktformular/contact.html">Kontakt</a></li>
         <li><a href="/Impressum/impressum.html">Impressum</a></li>
       </ul>
       <button onclick="openClose()" class="btn">close</button>
     </div>
     <div class="box-shadow">
-      <header class="wrapper_1">
-        <a class="logo-header" href="/index.html"
+      <header class="wrapper">
+        <a class="logo-header" href="index.html"
           ><img src="./img/logo.png" alt="Logo"
         /></a>
-
         <div class="navMargin">
           <nav>
-            <a href="/index.html">Start</a>
-            <a href="/Rezept_Dennis/dennis-rezept.html" id="header-aktiv"
-              >Rezept des Tages</a
-            >
-            <a href="/Kontaktformular/contact.html">Kontakt</a>
-            <a href="/Impressum/impressum.html">Impressum</a>
+            <a id="header-aktiv" href="/index.html">Start</a>
+            <a href="./Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
+            <a href="./Kontaktformular/contact.html">Kontakt</a>
+            <a href="./Impressum/impressum.html">Impressum</a>
           </nav>
         </div>
         <button onclick="openClose()" class="noneClassIcon">
@@ -52,7 +50,6 @@
         </button>
       </header>
     </div>
-
 
     <section class="hero distance">
       <h1>Zimtschnecken</h1>
@@ -78,20 +75,50 @@
       <form class="portion-input">
         <p class="txt">Zutaten für</p>
         <input id="input" type="number" min="1" max="20" />
-        <button onclick="//#">Portionen</button>
+        <button
+          onclick="
+            portions();
+            return false;
+          "
+        >
+          Portionen
+        </button>
       </form>
 
       <ul>
-        <li class="list-gray-container"><p id="value-1">125</p> g Mehl</li>
-        <li><p id="value-2">4</p> g Trockenhefe</li>
-        <li class="list-gray-container"><p id="value-3">25</p> g Zucker</li>
-        <li><p id="value-4">60</p> ml Milch (lauwarm)</li>
-        <li class="list-gray-container"><p id="value-5">25</p> g Butter (weich)</li>
+        <li class="list-gray-container">
+          <p id="value-1">125</p>
+          g Mehl
+        </li>
+        <li>
+          <p id="value-2">4</p>
+          g Trockenhefe
+        </li>
+        <li class="list-gray-container">
+          <p id="value-3">25</p>
+          g Zucker
+        </li>
+        <li>
+          <p id="value-4">60</p>
+          ml Milch (lauwarm)
+        </li>
+        <li class="list-gray-container">
+          <p id="value-5">25</p>
+          g Butter (weich)
+        </li>
         <li>Salz</li>
-        <li class="list-gray-container"><p id="value-6">30</p> g brauner Zucker</li>
-        <li><p id="value-7">2</p> TL Zimt</li>
-        <li class="list-gray-container"><p id="value-8">50</p> g Puderzucker</li>
-        <li><p id="value-9">2</p> TL Milch</li>
+        <li class="list-gray-container">
+          <p id="value-6">30</p>
+          g brauner Zucker
+        </li>
+        <li>
+          <p id="value-7">2</p>
+          TL Zimt
+        </li>
+        <li class="list-gray-container">
+          <p id="value-8">50</p>
+          g Puderzucker
+        </li>
       </ul>
     </section>
 
