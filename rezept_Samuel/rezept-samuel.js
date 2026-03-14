@@ -30,7 +30,7 @@ function portions() {
     document.getElementById("value-8").innerHTML = puderzuckercalc;
 }
 
-
+const hamburgerMenu = document.getElementById("hamburgerMenu");
 
 function openClose() {
     hamburgerMenu.classList.toggle("noneClass");
