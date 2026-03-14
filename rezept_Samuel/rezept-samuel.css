@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
 }
@@ -10,6 +9,10 @@ header {
   font-size: 24px;
   padding-left: 120px;
   padding-right: 120px;
+}
+
+.noneClass {
+    display: none;
 }
 
 .box-shadow {
@@ -34,7 +37,12 @@ header a:hover {
   text-decoration-thickness: 4px;
   text-underline-offset: 15px;
 }
-
+#header-aktiv {
+  color: rgb(0, 128, 0) !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 4px !important; 
+  text-underline-offset: 15px !important;
+}
 nav {
   margin-bottom: 10px;
   height: 100%;
@@ -124,6 +132,7 @@ span img {
 }
 
 input {
+    border-width: 1px;
     border-radius: 5px;
     border-color: rgba(246, 246, 246);
     padding-left: 8px;
@@ -142,7 +151,7 @@ button {
 }
 
 .txt {
-    font-size: 24px;
+    font-size: 22px;
     margin: 11px 11px 11px 0;
 }
 
@@ -212,210 +221,99 @@ footer {
   margin: 0;
 }
 
-header {
-  height: 120px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 24px;
-  padding-left: 120px;
-  padding-right: 120px;
-}
 
-.box-shadow {
-  box-shadow: 0 0 5px 0 rgb(0, 0, 0, 0.2);
-}
 
-header img {
-  height: 84px;
-}
-
-header a {
-  color: black;
-  text-decoration: none;
-  align-content: center;
-  font-size: 24px;
-   font-family: "Raleway", sans-serif;
-}
-
-header a:hover {
-  color: rgb(0, 128, 0);
-  text-decoration: underline;
-  text-decoration-thickness: 4px;
-  text-underline-offset: 15px;
-}
-
-nav {
-  margin-bottom: 10px;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  gap: 30px;
-}
-
-.navMargin {
-  display: flex;
-  height: fit-content;
-  margin-bottom: 5px;
-  margin-top: auto;
-}
-
-.distance {
-    padding-left: 200px;
-    padding-right: 200px;
-}
-
-.seperator {
-    height: 2px;
-    max-width: 1524px;
-    width: 100%;
-    background-color: rgba(246, 246, 246);
-}
-
-span {
-    background-color: rgba(239, 239, 239);
-    padding: 8px 16px 8px 16px;
-    border-radius: 10px;
-}
-
-h1 {
-    font-family: "Raleway", sans-serif;
-    font-size: 50px;
-}
-
-p {
-    font-family: "Raleway", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    color: #716A6E;
-    margin: 0;
-}
-
-span {
-    color: #716A6E;
-}
-
-span img {
-    padding-right: 16px;
-}
-
-.hero {
-    padding-top: 50px;
-}
-
-.rezept-img {
-    height: 250px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 32px;
-}
-
-.rezept-information {
+@media (max-width: 1090px) {
+  .navMargin{
+    display: none !important;
+  }
+  .noneClassIcon{
+    all: unset;
     display: flex;
-    gap: 30px;
-    font-size: 20px;
-}
-
-.icon {
-    height: 20px;
-}
-
-
-.ingredients-list {
-    padding-top: 75px;
-}
-
-
-.portion-input {
-    display: flex;
-    gap: 0;
-    margin: 16px 0 16px 0;
-}
-
-input {
-    border-radius: 5px;
-    border-color: rgba(246, 246, 246);
-    padding-left: 8px;
-    height: 50px;
-    width: 208px;
-    font-size: 19px;
-}
-
-button {
-    color: white;
-    background-color: green;
-    border: 0;
-    height: 53px;
-    width: 160px;
-    font-size: 18px;
-}
-
-.txt {
-    font-size: 24px;
-    margin: 11px 11px 11px 0;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    padding-left: 32px;
+    padding: 5px;
     height: 55px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    color: #716A6E;
-    gap: 8px;
+    margin-top: 30px;
+    cursor: pointer;
+    }
 }
 
-.list-gray-container {
-    background-color: rgb(239, 239, 239);
-    border-radius: 10px;
+@media (max-width: 1250px) {
+
+    .distance {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }
 
-.rezept-txt {
-    padding: 24px 0 24px 0;
+@media (max-width: 690px) {
+    span{
+        padding: 8px;
+    }
+
+    span img {
+        padding-right: 5px;
+    }
 }
 
-.profile-pic{
-    width: 50px;
-    height: 50px;
+@media (max-width: 608px) {
+    span{
+        padding: 5px;
+    }
+
+    span img {
+        padding-right: 3px;
+    }
+
+    .rezept-information {
+        gap: 8px;
+    }
 }
 
-.profile-container {
-    display: flex;
-    margin-bottom: 100px;
-    gap: 25px;
+@media (max-width: 540px) {
+    .distance {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
-.profile-container img {
-    width: 80px;
-    border-radius: 50px;
+@media (max-width: 446px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .preparation-infprmation {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    span {
+        display: flex;
+    }
 }
 
-.profile-name {
-    align-content: center;
-}
+@media (max-width: 380px) {
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 120px;
-}
+    h1 {
+        font-size: 30px;
+    }
 
-.bg-footer {
-  background-color: rgb(35, 35, 35);
-}
+    input {
+        height: 32px;
+        align-self: anchor-center;
+    }
 
-.sozial-media {
-  height: 37px;
-  width: auto;
-}
+    button {
+        height: 32px;
+        align-self: anchor-center;
+        font-size: 15px;
+    }
 
-.sozial-media-logos {
-  align-items: center;
+    .distance {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
