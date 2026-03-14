@@ -1,128 +1,111 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Kochwelt</title>
-    <link rel="icon" href="kochwelt_2/" />
-    <link rel="icon" href="./img/logo_small.png" />
-  </head>
 
-  <body>
-    <h4 class="below320">Dein Bildschirm ist leider zu klein :-(</h4>
-    <div id="hamburgerMenu" class="hamburger noneClass">
-      <a href="/index.html"><img src="/img/logo.png" alt="" /></a>
-      <ul>
-        <li><a href="./index.html">Start</a></li>
-        <li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Kochwelt</title>
+  <link rel="icon" href="kochwelt_2/" />
+  <link rel="icon" href="./img/logo_small.png" />
+</head>
+
+<body>
+  <h4 class="below320">Dein Bildschirm ist leider zu klein :-(</h4>
+
+  <div class="box-shadow">
+    <header class="wrapper">
+      <a class="logo-header" href="index.html"><img src="./img/logo.png" alt="Logo" /></a>
+      <div class="navMargin">
+        <nav>
+          <a id="header-aktiv" href="/index.html">Start</a>
           <a href="./Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
-        </li>
-        <li><a href="/Kontaktformular/contact.html">Kontakt</a></li>
-        <li><a href="/Impressum/impressum.html">Impressum</a></li>
-      </ul>
-      <button onclick="openClose()" class="btn">close</button>
-    </div>
-    <div class="box-shadow">
-      <header class="wrapper">
-        <a class="logo-header" href="index.html"
-          ><img src="./img/logo.png" alt="Logo"
-        /></a>
-        <div class="navMargin">
-          <nav>
-            <a id="header-aktiv" href="/index.html">Start</a>
-            <a href="./Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
-            <a href="./Kontaktformular/contact.html">Kontakt</a>
-            <a href="./Impressum/impressum.html">Impressum</a>
-          </nav>
-        </div>
-        <button onclick="openClose()" class="noneClassIcon">
-          <svg width="24" height="24" viewBox="0 0 24 24">
-            <rect y="4" width="24" height="2" fill="black" />
-            <rect y="11" width="24" height="2" fill="black" />
-            <rect y="18" width="24" height="2" fill="black" />
-          </svg>
-        </button>
-      </header>
-    </div>
+          <a href="./Kontaktformular/contact.html">Kontakt</a>
+          <a href="./Impressum/impressum.html">Impressum</a>
+        </nav>
+      </div>
 
-    <section>
-      <div class="wrapper hero-section">
-        <img
-          class="hero-img"
-          src="./Rezept_Dennis/img/aioli-light.jpg"
-          alt="hero-bild-rezept"/>
-        <div class="hero-text">
-          <h2>Aioli Light</h2>
-          <p>
-            Diese leichte Aioli ist die perfekte Alternative zur klassischen
-            Variante. Sie überzeugt mit cremiger Konsistenz und intensivem
-            Knoblauchgeschmack, enthält jedoch weniger Fett und wirkt angenehm
-            frisch. Ideal als Dip zu Gemüse, Brot oder als Sauce zu
-            Grillgerichten – schnell zubereitet und voller Geschmack bei weniger
-            Kalorien.
-          </p>
-          <a class="btn-a" href="./Rezept_Dennis/dennis-rezept.html"
-            ><button class="btn">Rezept öffnen</button></a
-          >
-        </div>
+      <button onclick="toggleMenu()" class="menu-button"><img class="menu-img" src="/img/menu.png" alt=""></button>
+
+      <div id="resp-menu" class="resp-menu-box resp-menu-closed">
+        <img src="./img/logo.png" alt="logo">
+        <a id="header-aktiv" href="/index.html">Start</a>
+        <a href="/Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
+        <a href="/Kontaktformular/contact.html">Kontakt</a>
+        <a href="/Impressum/impressum.html">Impressum</a>
+        <button class="close-menu-button" onclick="toggleMenu()">Close Menu</button>
       </div>
-    </section>
-    <section class="bg-grey">
-      <div class="wrapper main-section">
-        <h2>Lust auf was Neues?</h2>
-        <div class="recipe-items">
-          <div class="recipe-item">
-            <a href="./Rezept Simon/rezept-simon.html"><img src="./Rezept Simon/img/Möhreneintopf.PNG" alt="Bild von Möhreneintopf" /></a>
-            <p>Möhreneintopf</p>
-          </div>
-          <div class="recipe-item">
-            <a href="./Rezept Andreas/rezept-andreas.html"><img src="./Rezept Andreas/img/palatschinken.jpg" alt="Bild von Palatschinken" /></a>
-            <p>Palatschinken</p>
-          </div>
-          <div class="recipe-item">
-            <a href="./rezept_Samuel/rezept-samuel.html"><img src="./rezept_Samuel/img/lum3n-pastries-2208050_1280.jpg" alt="Bild von Zimtschnecken"></a>
-            <p>Zimtschnecken</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="pan-vs-wok wrapper">
-      <h2>Die Freude am Kochen</h2>
-      <div class="align-article">
+
+
+    </header>
+  </div>
+
+  <section>
+    <div class="wrapper hero-section">
+      <img class="hero-img" src="./Rezept_Dennis/img/aioli-light.jpg" alt="hero-bild-rezept" />
+      <div class="hero-text">
+        <h2>Aioli Light</h2>
         <p>
-          Kochen ist mehr als nur die Zubereitung von Essen – es ist ein
-          kreativer Ausgleich im Alltag. Mit einfachen Zutaten lassen sich
-          leckere Gerichte zaubern, die nicht nur satt machen, sondern auch
-          Freude bereiten. Ob alleine oder gemeinsam: Selbst zu kochen schafft
-          besondere Momente und bringt Genuss direkt auf den Teller.
+          Diese leichte Aioli ist die perfekte Alternative zur klassischen
+          Variante. Sie überzeugt mit cremiger Konsistenz und intensivem
+          Knoblauchgeschmack, enthält jedoch weniger Fett und wirkt angenehm
+          frisch. Ideal als Dip zu Gemüse, Brot oder als Sauce zu
+          Grillgerichten – schnell zubereitet und voller Geschmack bei weniger
+          Kalorien.
         </p>
-        <img
-          class="img-wok"
-          src="/Rezept_Dennis/img/freude-am-kochen.png"
-          alt="Wok"
-        />
+        <a class="btn-a" href="./Rezept_Dennis/dennis-rezept.html"><button class="btn">Rezept öffnen</button></a>
       </div>
-    </section>
-
-    <div class="bg-footer">
-      <footer class="wrapper footerClass">
-        <div>
-          <a href="./index.html"><img src="./img/logo-blk.PNG" alt="logo" /></a>
-        </div>
-        <div class="sozial-media-logos">
-          <a href=""
-            ><img class="sozial-media" src="./img/Facebook.PNG" alt=""
-          /></a>
-          <a href=""
-            ><img class="sozial-media" src="./img/Insta.PNG" alt=""
-          /></a>
-          <a href=""
-            ><img class="sozial-media" src="./img/Twitter.PNG" alt=""
-          /></a>
-        </div>
-      </footer>
     </div>
-  </body>
-  <script src="/script.js"></script>
+  </section>
+  <section class="bg-grey">
+    <div class="wrapper main-section">
+      <h2>Lust auf was Neues?</h2>
+      <div class="recipe-items">
+        <div class="recipe-item">
+          <a href="./Rezept Simon/rezept-simon.html"><img src="./Rezept Simon/img/Möhreneintopf.PNG"
+              alt="Bild von Möhreneintopf" /></a>
+          <p>Möhreneintopf</p>
+        </div>
+        <div class="recipe-item">
+          <a href="./Rezept Andreas/rezept-andreas.html"><img src="./Rezept Andreas/img/palatschinken.jpg"
+              alt="Bild von Palatschinken" /></a>
+          <p>Palatschinken</p>
+        </div>
+        <div class="recipe-item">
+          <a href="./rezept_Samuel/rezept-samuel.html"><img src="./rezept_Samuel/img/lum3n-pastries-2208050_1280.jpg"
+              alt="Bild von Zimtschnecken"></a>
+          <p>Zimtschnecken</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pan-vs-wok wrapper">
+    <h2>Die Freude am Kochen</h2>
+    <div class="align-article">
+      <p>
+        Kochen ist mehr als nur die Zubereitung von Essen – es ist ein
+        kreativer Ausgleich im Alltag. Mit einfachen Zutaten lassen sich
+        leckere Gerichte zaubern, die nicht nur satt machen, sondern auch
+        Freude bereiten. Ob alleine oder gemeinsam: Selbst zu kochen schafft
+        besondere Momente und bringt Genuss direkt auf den Teller.
+      </p>
+      <img class="img-wok" src="/Rezept_Dennis/img/freude-am-kochen.png" alt="Wok" />
+    </div>
+  </section>
+
+  <div class="bg-footer">
+    <footer class="wrapper footerClass">
+      <div>
+        <a href="./index.html"><img src="./img/logo-blk.PNG" alt="logo" /></a>
+      </div>
+      <div class="sozial-media-logos">
+        <a href=""><img class="sozial-media" src="./img/Facebook.PNG" alt="" /></a>
+        <a href=""><img class="sozial-media" src="./img/Insta.PNG" alt="" /></a>
+        <a href=""><img class="sozial-media" src="./img/Twitter.PNG" alt="" /></a>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="/script.js"></script>
+
 </html>

@@ -198,34 +198,7 @@ footer {
 .sozial-media-logos {
   align-content: center;
 }
-.hamburger {
-  position: absolute;
-  right: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-}
-.hamburger img {
-  display: flex;
-  width: 200px;
-}
-.hamburger ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  cursor: pointer;
-}
-.hamburger li {
-  all: unset;
-  padding-bottom: 20px;
-}
-.hamburger a {
-  all: unset;
-}
+
 .noneClass {
   display: none;
 }
@@ -235,6 +208,56 @@ footer {
 .below320 {
   display: none;
 }
+
+
+
+
+.resp-menu-box {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    text-decoration: none;
+    gap: 16px;
+
+    transition: all 250ms ease-in-out;
+}
+
+.close-menu-button {
+    all: unset;
+    padding: 8px 34px;
+    background-color: #008000;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.resp-menu-closed {
+    transform: translateX(200%);
+}
+
+main {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.menu-button {
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+.menu-img {
+    height: 56px;
+}
+
 @media (max-width: 1090px) {
   .navMargin{
     display: none !important;
@@ -249,6 +272,23 @@ footer {
     margin-top: 30px;
     cursor: pointer;
   }
+
+      .menu-button {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navMargin {
+        margin-bottom: auto;
+    }
+
+    #header-aktiv {
+        text-decoration: none !important;
+    }
+
+    header a:hover {
+        text-decoration: none !important;
+    }
 }
 @media (max-width: 950px) {
   .hero-section {
