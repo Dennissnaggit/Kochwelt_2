@@ -14,6 +14,17 @@
 </head>
 
 <body>
+  <!--#region Header-->
+  <div id="hamburgerMenu" class="hamburger noneClass">
+    <a href="http://"><img src="/img/logo.png" alt="" /></a>
+    <ul>
+      <li><a href="/index.html">Start</a></li>
+      <li><a href="/Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a></li>
+      <li><a href="/Kontaktformular/contact.html">Kontakt</a></li>
+      <li><a href="/Impressum/impressum.html">Impressum</a></li>
+    </ul>
+    <button onclick="openClose()" class="portions">close</button>
+  </div>
   <div class="box-shadow">
     <header class="wrapper">
       <a class="logo-header" href="index.html"><img src="./img/logo.png" alt="Logo" /></a>
@@ -26,88 +37,93 @@
           <a href="../Impressum/impressum.html">Impressum</a>
         </nav>
       </div>
+      <button onclick="openClose()" class="noneClassIcon">
+        <svg width="24" height="24" viewBox="0 0 24 24">
+          <rect y="4" width="24" height="2" fill="black" />
+          <rect y="11" width="24" height="2" fill="black" />
+          <rect y="18" width="24" height="2" fill="black" />
+        </svg>
+      </button>
     </header>
   </div>
+  <!-- #endregion -->
+  <h3 class="below320">"Deine Bildschirm ist leider zu klein :-("</h3>
+  <!--#region Main-->
   <main class="wrapper">
     <h2>Palatschinken</h2>
     <img class="picture-size" src="./img/palatschinken.jpg" alt="Bild von Palatschinken">
     <div class="declarations">
       <p class="declarations-button"><img class="img-size" src="./img/clock-regular.svg" alt="Zeit"> 30 Min</p>
       <p class="declarations-button"><img class="img-size" src="./img/brain-solid.svg" alt="Schwirigkeit">Leicht</p>
-      <p class="declarations-button"><img class="img-size" src="./img/calendar-alt-regular.svg" alt=""><span id="date"></span></p>
+      <p class="declarations-button"><img class="img-size" src="./img/calendar-alt-regular.svg" alt=""><span>14.03.2026</span></p>
     </div>
     <div class="line"></div>
     <div class="label">
-        <p>Zutaten für:</p>
-        <label>
-            <input class="number" id="number-of-people" type="number" min="1" max="10" value="1"><input class="portions" onclick="anzahl()" type="button" value="Portionen">
-        </label>
+      <p>Zutaten für:</p>
+      <label class="number-portions-button">
+        <input class="number" id="number-of-people" type="number" min="1" max="10" value="1"><input class="portions" onclick="anzahl()" type="button" value="Portionen">
+      </label>
     </div>
     <ul>
-        <li class="background-grey">
-            <p  id="mehl">75 g</p>
-            <p>Mehl</p>
-        </li>
-        <li>
-            <p id="milch">125 ml</p>
-            <p>Milch</p>   
-        </li>
-        <li class="background-grey">
-            <p  id="eier">1</p>
-            <p>Ei (er)</p>
-        </li>
-        <li>
-            <p>ein Schuss Mineralwasser Prickelnd</p>
-        </li>
-        <li class="background-grey">
-            <p>zum Herausbacken:</p>
-            <p>etwas Planzenöl oder Butter</p>
-        </li>
-        <li >
-            <p>für die Füllung:</p>
-            <p>Marmelade nach Wahl</p>
-        </li>
-        <li class="background-grey">
-            <p>Zum Garnieren:</p>
-            <p>Puderzucker</p>
-        </li>
+      <li class="background-grey">
+        <p id="mehl">75 g</p>
+        <p>Mehl</p>
+      </li>
+      <li>
+        <p id="milch">125 ml</p>
+        <p>Milch</p>
+      </li>
+      <li class="background-grey">
+        <p id="eier">1</p>
+        <p>Ei (er)</p>
+      </li>
+      <li>
+        <p>ein Schuss Mineralwasser Prickelnd</p>
+      </li>
+      <li class="background-grey">
+        <p>zum Herausbacken:</p>
+        <p>etwas Planzenöl oder Butter</p>
+      </li>
+      <li>
+        <p>für die Füllung:</p>
+        <p>Marmelade nach Wahl</p>
+      </li>
+      <li class="background-grey">
+        <p>Zum Garnieren:</p>
+        <p>Puderzucker</p>
+      </li>
     </ul>
     <h3>Zubereitung</h3>
     <div class="declarations-preparation">
       <p class="declarations-button"><img class="img-size" src="./img/clock-regular.svg" alt="Zeit"> 30 Min</p>
-      <p class="declarations-button"><img class="img-size" src="./img/calendar-alt-regular.svg" alt=""><span id="date"></span></p>
+      <p class="declarations-button"><img class="img-size" src="./img/calendar-alt-regular.svg" alt="">14.03.2026</p>
     </div>
     <p>
-        1. Rund 2/3 der Milch mit den Eiern gut versprudeln und das Mehl mit dem Schneebesen einrühren, sodass ein dickflüssiger Teig entsteht. <br>
-        2. Danach die restliche Milch in den Teig leeren und mit einer Prise Salz gut vermengen, sodass ein flüssiger Teig ohne Klumpen entsteht. <br>
-        3. Damit der Teig besonders flaumig wird, gib noch einen Schuss Mineralwasser hinzu und lass den Teig ein wenig im Kühlschrank rasten. <br>
-        4. In einer flachen Pfanne etwa 1 TL Butter oder Öl heiß werden lassen, den Teig ½ cm dick eingießen und durch Schwenken der Pfanne gut verteilen. <br>
-        5. Bei mittlerer Hitze ein paar Minuten backen, bis der Teig auf der Oberseite fest ist. Palatschinke in der Pfanne wenden und nochmals ein paar Minuten auf der <br> zweiten Seite backen, bis sie goldgelb ist. <br>
-        6. Die fertigen Palatschinken mit gewünschter Füllung bestreichen, mit Staubzucker bestreuen und noch heiß servieren.
+      1. Rund 2/3 der Milch mit den Eiern gut versprudeln und das Mehl mit dem Schneebesen einrühren, sodass ein
+      dickflüssiger Teig entsteht. <br>
+      2. Danach die restliche Milch in den Teig leeren und mit einer Prise Salz gut vermengen, sodass ein flüssiger Teig
+      ohne Klumpen entsteht. <br>
+      3. Damit der Teig besonders flaumig wird, gib noch einen Schuss Mineralwasser hinzu und lass den Teig ein wenig im
+      Kühlschrank rasten. <br>
+      4. In einer flachen Pfanne etwa 1 TL Butter oder Öl heiß werden lassen, den Teig ½ cm dick eingießen und durch
+      Schwenken der Pfanne gut verteilen. <br>
+      5. Bei mittlerer Hitze ein paar Minuten backen, bis der Teig auf der Oberseite fest ist. Palatschinke in der
+      Pfanne wenden und nochmals ein paar Minuten auf der <br> zweiten Seite backen, bis sie goldgelb ist. <br>
+      6. Die fertigen Palatschinken mit gewünschter Füllung bestreichen, mit Staubzucker bestreuen und noch heiß
+      servieren.
     </p>
     <h4>Rezept erstellt von</h4>
     <div class="profile">
-        <img class="profile-img" src="./img/profile.png" alt="Profilbild">
-        <p>Andreas</p>
+      <img class="profile-img" src="./img/profile.png" alt="Profilbild">
+      <p>Andreas</p>
     </div>
-    
+
   </main>
-
-
-
-
-
-
-
-
-
-
-
+  <!-- #endregion -->
+  <!--#region Footer-->
   <div class="bg-footer">
     <footer class="wrapper">
-      <div>
-        <a href="./index.html"><img src="./img/logo-blk.PNG" alt="logo" /></a>
-      </div>
+        <a class="footer-logo" href="./index.html"><img  src="./img/logo-blk.PNG" alt="logo" /></a>
       <div class="sozial-media-logos">
         <a href=""><img class="sozial-media" src="./img/Facebook.PNG" alt="" /></a>
         <a href=""><img class="sozial-media" src="./img/Insta.PNG" alt="" /></a>
@@ -115,6 +131,7 @@
       </div>
     </footer>
   </div>
+  <!--endregion-->
 </body>
 <script src="./rezept-andreas.js"></script>
 
