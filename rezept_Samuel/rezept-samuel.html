@@ -10,12 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="/Kochwelt_2/img/logo_small.png" />
 
     <title>Zimtschnecken</title>
 
     <link rel="stylesheet" href="rezept-samuel.css" />
   </head>
-  <body>
+  <body class="wrapper">
     <div id="hamburgerMenu" class="hamburger noneClass">
       <a href="/Kochwelt_2/index.html"><img src="/img/logo.png" alt="" /></a>
       <ul>
@@ -51,7 +52,7 @@
       </header>
     </div>
 
-    <section class="hero distance">
+    <section class="hero distance wrapper">
       <h1>Zimtschnecken</h1>
       <h1 id="test"></h1>
       <img
@@ -69,60 +70,47 @@
       </div>
     </section>
 
-    <section class="ingredients-list distance">
+    <section class="ingredients-list distance wrapper">
       <div class="seperator"></div>
 
-      <form class="portion-input">
+      <form class="portion-input" onsubmit="portions(); return false;">
         <p class="txt">Zutaten für</p>
         <input id="input" type="number" min="1" max="20" />
-        <button
-          onclick="
-            portions();
-            return false;
-          "
-        >
+        <button>
           Portionen
         </button>
       </form>
 
       <ul>
         <li class="list-gray-container">
-          <p id="value-1">125</p>
-          g Mehl
+          <p id="value-1" class="gray">125</p>g Mehl
         </li>
         <li>
-          <p id="value-2">4</p>
-          g Trockenhefe
+          <p id="value-2" class="gray">4</p>g Trockenhefe
         </li>
         <li class="list-gray-container">
-          <p id="value-3">25</p>
-          g Zucker
+          <p id="value-3" class="gray">25</p>g Zucker
         </li>
         <li>
-          <p id="value-4">60</p>
-          ml Milch (lauwarm)
+          <p id="value-4" class="gray">60</p>ml Milch (lauwarm)
         </li>
         <li class="list-gray-container">
-          <p id="value-5">25</p>
-          g Butter (weich)
+          <p id="value-5" class="gray">25</p>g Butter (weich)
         </li>
         <li>Salz</li>
         <li class="list-gray-container">
-          <p id="value-6">30</p>
-          g brauner Zucker
+          <p id="value-6" class="gray">30</p>g brauner Zucker
         </li>
         <li>
-          <p id="value-7">2</p>
-          TL Zimt
+          <p id="value-7" class="gray">2</p>TL Zimt
         </li>
         <li class="list-gray-container">
-          <p id="value-8">50</p>
-          g Puderzucker
+          <p id="value-8" class="gray">50</p>g Puderzucker
         </li>
       </ul>
     </section>
 
-    <section class="distance">
+    <section class="distance wrapper">
       <h2>Zubereitung</h2>
       <div class="preparation-infprmation">
         <span
@@ -154,7 +142,7 @@
       </p>
     </section>
 
-    <section class="distance">
+    <section class="distance wrapper">
       <h3>Rezept erstellt von</h3>
       <div class="profile-container">
         <img src="./img/profile.png" alt="profile" />
@@ -162,8 +150,8 @@
       </div>
     </section>
 
-    <div class="bg-footer">
-      <footer class="wrapper_1">
+    <div class="bg-footer wrapper">
+      <footer class="wrapper footerClass">
         <div>
           <a href="./index.html"><img src="./img/logo-blk.PNG" alt="logo" /></a>
         </div>
