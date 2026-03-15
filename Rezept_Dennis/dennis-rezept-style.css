@@ -63,24 +63,14 @@ nav {
   flex-direction: column;
   max-width: 1440px;
   margin: 0 auto;
-<<<<<<< HEAD
-  padding-right: 80px;
-  padding-left: 80px;
-=======
   padding-left: 80px;
   padding-right: 80px;
->>>>>>> ede3cca (Dennis Rezept Main Content volle breite / Standard vier Portionen Font Color angepas.)
 }
 .wrapper_1 {
   max-width: 1440px;
   margin: 0 auto;
-<<<<<<< HEAD
-  padding-right: 80px;
-  padding-left: 80px;
-=======
   padding-left: 80px;
   padding-right: 80px;
->>>>>>> ede3cca (Dennis Rezept Main Content volle breite / Standard vier Portionen Font Color angepas.)
 }
 h2 {
   font-family: "Raleway", sans-serif;
