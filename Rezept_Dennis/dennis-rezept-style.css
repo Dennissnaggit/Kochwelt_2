@@ -103,10 +103,14 @@ nav {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0;
+  padding-left: 120px;
+  padding-right: 120px;
 }
 .wrapper_1 {
   max-width: 1440px;
   margin: 0 auto;
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 h2 {
