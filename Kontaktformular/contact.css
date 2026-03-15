@@ -29,6 +29,7 @@ header {
   display: flex;
   justify-content: space-between;
   font-size: 24px;
+  width: 100%;
 }
 
 .box-shadow {
@@ -77,6 +78,8 @@ nav {
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 :root {
@@ -562,6 +565,10 @@ footer {
     padding: 20px;
     gap: 16px;
     align-items: center;
+  }
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
