@@ -306,6 +306,15 @@ footer {
     span img {
         padding-right: 5px;
     }
+
+    .wrapper {
+        padding: 0 50px;
+  }
+
+    .footerClass {
+        display: flex;
+        flex-direction: column;
+  }
 }
 
 @media (max-width: 608px) {
@@ -366,5 +375,11 @@ footer {
     .distance {
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .wrapper {
+        display: none;
     }
 }
