@@ -13,38 +13,40 @@
   <link rel="icon" href="./img/logo_small.png" />
 </head>
 
-<body>
+<body onload="startAnzahl()">
   <!--#region Header-->
-  <div id="hamburgerMenu" class="hamburger noneClass">
-    <a href="http://"><img src="/img/logo.png" alt="" /></a>
-    <ul>
-      <li><a href="/index.html">Start</a></li>
-      <li><a href="/Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a></li>
-      <li><a href="/Kontaktformular/contact.html">Kontakt</a></li>
-      <li><a href="/Impressum/impressum.html">Impressum</a></li>
-    </ul>
-    <button onclick="openClose()" class="portions">close</button>
-  </div>
-  <div class="box-shadow">
-    <header class="wrapper">
-      <a class="logo-header" href="index.html"><img src="./img/logo.png" alt="Logo" /></a>
+  <div class="content">
+    <div id="hamburgerMenu" class="hamburger noneClass">
+      <a href="http://"><img src="/img/logo.png" alt="" /></a>
+      <ul>
+        <li><a href="/index.html">Start</a></li>
+        <li><a href="/Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a></li>
+        <li><a href="/Kontaktformular/contact.html">Kontakt</a></li>
+        <li><a href="/Impressum/impressum.html">Impressum</a></li>
+      </ul>
+      <button onclick="openClose()" class="portions">close</button>
+    </div>
+    <div class="box-shadow">
+      <header class="wrapper">
+        <a class="logo-header" href="../index.html"><img src="./img/logo.png" alt="Logo" /></a>
 
-      <div class="navMargin">
-        <nav>
-          <a id="header-aktiv" href="../index.html">Start</a>
-          <a href="../Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
-          <a href="../Kontaktformular/contact.html">Kontakt</a>
-          <a href="../Impressum/impressum.html">Impressum</a>
-        </nav>
-      </div>
-      <button onclick="openClose()" class="noneClassIcon">
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <rect y="4" width="24" height="2" fill="black" />
-          <rect y="11" width="24" height="2" fill="black" />
-          <rect y="18" width="24" height="2" fill="black" />
-        </svg>
-      </button>
-    </header>
+        <div class="navMargin">
+          <nav>
+            <a id="header-aktiv" href="../index.html">Start</a>
+            <a href="../Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
+            <a href="../Kontaktformular/contact.html">Kontakt</a>
+            <a href="../Impressum/impressum.html">Impressum</a>
+          </nav>
+        </div>
+        <button onclick="openClose()" class="noneClassIcon">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <rect y="4" width="24" height="2" fill="black" />
+            <rect y="11" width="24" height="2" fill="black" />
+            <rect y="18" width="24" height="2" fill="black" />
+          </svg>
+        </button>
+      </header>
+    </div>
   </div>
   <!-- #endregion -->
   <h3 class="below320">"Deine Bildschirm ist leider zu klein :-("</h3>
@@ -55,14 +57,17 @@
     <div class="declarations">
       <p class="declarations-button"><img class="img-size" src="./img/clock-regular.svg" alt="Zeit"> 30 Min</p>
       <p class="declarations-button"><img class="img-size" src="./img/brain-solid.svg" alt="Schwirigkeit">Leicht</p>
-      <p class="declarations-button"><img class="img-size" src="./img/calendar-alt-regular.svg" alt=""><span>14.03.2026</span></p>
+      <p class="declarations-button"><img class="img-size" src="./img/calendar-alt-regular.svg"
+          alt=""><span>14.03.2026</span></p>
     </div>
     <div class="line"></div>
     <div class="label">
       <p>Zutaten für:</p>
       <label class="number-portions-button">
-        <input class="number" id="number-of-people" type="number" min="1" max="10" value="1"><input class="portions" onclick="anzahl()" type="button" value="Portionen">
+        <input class="number" id="number-of-people" type="number" min="1" max="10" value="4"><input class="portions"
+          onclick="anzahl()" type="button" value="Portionen">
       </label>
+      <p id="wrongValue"></p>
     </div>
     <ul>
       <li class="background-grey">
@@ -123,7 +128,7 @@
   <!--#region Footer-->
   <div class="bg-footer">
     <footer class="wrapper">
-        <a class="footer-logo" href="./index.html"><img  src="./img/logo-blk.PNG" alt="logo" /></a>
+      <a class="footer-logo" href="./index.html"><img src="./img/logo-blk.PNG" alt="logo" /></a>
       <div class="sozial-media-logos">
         <a href=""><img class="sozial-media" src="./img/Facebook.PNG" alt="" /></a>
         <a href=""><img class="sozial-media" src="./img/Insta.PNG" alt="" /></a>

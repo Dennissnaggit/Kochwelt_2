@@ -96,6 +96,11 @@ h2 {
     margin-top: 24px;
 }
 
+form {
+    display: flex;
+    align-items: center;
+}
+
 .information-field {
     padding: 8px;
     border-radius: 5px;
@@ -119,7 +124,7 @@ h2 {
 }
 
 span {
-    color: #191a19;
+    color: rgb(157, 166, 186);
     font-family: "Raleway", sans-serif;
 }
 
@@ -133,6 +138,8 @@ input {
     height: 28px;
     margin-left: 16px;
     border: 0.5px solid #efefef;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
 }
 
 .button-calculate {
@@ -141,6 +148,7 @@ input {
     background-color: #008000;
     color: white;
     font-family: "Raleway", sans-serif;
+    cursor: pointer;
 }
 
 button-calculate:hover {
@@ -152,6 +160,7 @@ th {
     border-radius: 7px;
     text-align: left;
     padding: 8px;
+    padding-left: 30px;
 }
 
 tr:nth-child(odd) {
@@ -165,12 +174,12 @@ table {
 }
 
 .txt-color {
-    color: #3d3d3d;
+    color: rgb(157, 166, 186);
     font-family: "Raleway", sans-serif;
 }
 
 span {
-    color: #3d3d3d;
+    color: rgb(157, 166, 186);
     font-family: "Raleway", sans-serif;
 }
 
@@ -247,6 +256,7 @@ footer {
     color: white;
     font-family: "Raleway", sans-serif;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .resp-menu-closed {
@@ -276,6 +286,7 @@ main {
 
     .menu-button {
         display: block;
+        cursor: pointer;
     }
 
     .navMargin {
