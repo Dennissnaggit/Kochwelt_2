@@ -8,40 +8,34 @@
     <title>Aioli Light</title>
   </head>
   <body onload="ingredientsOutput()">
-    <div id="hamburgerMenu" class="hamburger noneClass">
-      <a href="http://"><img src="/img/logo.png" alt="" /></a>
-      <ul>
-        <li><a href="/index.html">Start</a></li>
-        <li><a href="/Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a></li>
-        <li><a href="/Kontaktformular/contact.html">Kontakt</a></li>
-        <li><a href="/Impressum/impressum.html">Impressum</a></li>
-      </ul>
-      <button onclick="openClose()" class="btn">close</button>
-    </div>
-    <div class="box-shadow">
-      <header class="wrapper_1">
-        <a class="logo-header" href="/index.html"
-          ><img src="./img/logo.png" alt="Logo"
-        /></a>
+     <div class="box-shadow">
+            <header class="wrapper_1">
+                <a class="logo-header" href="/index.html"><img src="./img/logo.png" alt="Logo" /></a>
 
-        <div class="navMargin">
-          <nav>
-            <a href="/index.html">Start</a>
-            <a href="/Rezept_Dennis/dennis-rezept.html" id="header-aktiv"
-              >Rezept des Tages</a
-            >
-            <a href="/Kontaktformular/contact.html">Kontakt</a>
-            <a href="/Impressum/impressum.html">Impressum</a>
-          </nav>
+                <div class="navMargin">
+                    <nav>
+                        <a href="/index.html">Start</a>
+                        <a id="header-aktiv" href="/Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
+                        <a href="/Kontaktformular/contact.html">Kontakt</a>
+                        <a href="/Impressum/impressum.html">Impressum</a>
+                    </nav>
+
+                    <button onclick="toggleMenu()" class="menu-button"><img class="menu-img" src="/img/menu.png"
+                            alt=""></button>
+
+                    <div id="resp-menu" class="resp-menu-box resp-menu-closed">
+                        <img src="./img/logo.png" alt="logo">
+                        <a id="header-aktiv" href="/index.html">Start</a>
+                        <a href="/Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
+                        <a href="/Kontaktformular/contact.html">Kontakt</a>
+                        <a href="/Impressum/impressum.html">Impressum</a>
+                        <button class="close-menu-button" onclick="toggleMenu()">Close Menu</button>
+                    </div>
+
+
+                </div>
+            </header>
         </div>
-        <button onclick="openClose()" class="noneClassIcon">
-          <svg width="24" height="24" viewBox="0 0 24 24">
-            <rect y="4" width="24" height="2" fill="black" />
-            <rect y="11" width="24" height="2" fill="black" />
-            <rect y="18" width="24" height="2" fill="black" />
-          </svg>
-        </button>
-      </header>
     </div>
     <h3 class="below320">"Deine Bildschirm ist leider zu klein :-("</h3>
     <div class="wrapper">
