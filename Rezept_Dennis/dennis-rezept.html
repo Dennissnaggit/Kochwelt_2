@@ -7,7 +7,7 @@
     <link rel="icon" href="/img/logo_small.png" />
     <title>Aioli Light</title>
   </head>
-  <body>
+  <body onload="ingredientsOutput()">
     <div id="hamburgerMenu" class="hamburger noneClass">
       <a href="http://"><img src="/img/logo.png" alt="" /></a>
       <ul>
@@ -72,7 +72,7 @@
             name=""
             min="1"
             max="20"
-            value="1"
+            value="4"
             required
           />
           <button onclick="ingredientsOutput()" class="btn">Portionen</button>
@@ -93,11 +93,11 @@
               <p>gr Magerquark</p>
             </li>
             <li>
-              <p id="value3" class="portion-dennis">1/2</p>
+              <p id="value3" class="portion-dennis">0.5</p>
               <p>TL Salz</p>
             </li>
             <li class="grey">
-              <p id="value4" class="portion-dennis">1/4</p>
+              <p id="value4" class="portion-dennis">0.25</p>
               <p>TL Zucker</p>
             </li>
             <li>
