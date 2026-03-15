@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 body {
     margin: 0;
 }
@@ -219,8 +233,12 @@ li {
     font-family: "Raleway", sans-serif;
     font-weight: 300;
     font-size: 16px;
-    color: #716A6E;
+    color: rgb(157, 166, 186);   /*color: #716A6E;*/
     gap: 8px;
+}
+
+.gray {
+    color: rgb(157, 166, 186);
 }
 
 .list-gray-container {
