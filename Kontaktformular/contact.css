@@ -3,25 +3,17 @@
   src: url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
 }
 
-/** Variables **/
-
-html,
 body {
-  height: 100%;
   font-family: "Raleway", sans-serif;
-}
-
-body {
-  min-height: 100vh;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
-  font-family: "Raleway", sans-serif;
+  min-height: 100vh;
 }
 
-body {
-  margin: 0;
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 header {
@@ -29,7 +21,8 @@ header {
   display: flex;
   justify-content: space-between;
   font-size: 24px;
-  width: 100%;
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 .box-shadow {
@@ -75,35 +68,11 @@ nav {
   margin-top: auto;
 }
 
-.wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-left: 120px;
-  padding-right: 120px;
-}
 
-:root {
-  --color-background: #e7e7e7;
-  --color-background-alt: #888888;
-  --color-border-active: #da7105;
-  --color-border-default: #d1d1d1;
-  --color-highlight: #fdcf4c;
-  --color-primary: #b64e08;
-  --color-primary-active: #79320e;
-  --color-text-default: #262626;
-  --color-text-muted: #4f4f4f;
-
-  --font-family-body: "Figtree", system-ui, sans-serif;
-  --font-family-display: "Poppins", system-ui, sans-serif;
-}
 
 /** Base **/
 
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
+
 
 * {
   border: 0;
@@ -266,7 +235,7 @@ fieldset {
   display: flex;
 }
 
-:is(.fs-checkbox-field, .fs-radio-field) .fs-label + .fs-description {
+:is(.fs-checkbox-field, .fs-radio-field) .fs-label+.fs-description {
   margin-top: 0.25rem;
 }
 
@@ -468,7 +437,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 80px 20px;
 }
 
 footer {
@@ -521,12 +490,13 @@ footer {
 }
 
 .overflow {
-    position: relative;
-    overflow-x: hidden;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
+
 .menu-button {
   display: none;
   border: none;
@@ -566,6 +536,7 @@ footer {
     gap: 16px;
     align-items: center;
   }
+
   .wrapper {
     padding-left: 20px;
     padding-right: 20px;
