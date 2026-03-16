@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="rezept-samuel.css" />
   </head>
-  <body class="wrapper">
+  <body>
     <div id="hamburgerMenu" class="hamburger noneClass">
       <a href="/Kochwelt_2/index.html"><img src="/img/logo.png" alt="" /></a>
       <ul>
@@ -54,18 +54,17 @@
 
     <section class="hero distance wrapper">
       <h1>Zimtschnecken</h1>
-      <h1 id="test"></h1>
       <img
         class="rezept-img"
         src="./img/lum3n-pastries-2208050_1280.jpg"
         alt="Zimtschnecken-img"
       />
       <div class="rezept-information">
-        <span><img class="icon" src="./img/clock-regular.svg" />60 Min.</span>
-        <span><img class="icon" src="./img/brain-solid.svg" />simple</span>
+        <span class="inf-span"><img class="icon" src="./img/clock-regular.svg" /><p>60 Min.</p></span>
+        <span><img class="icon" src="./img/brain-solid.svg" /><p>simple</p></span>
         <span
           ><img class="icon" src="./img/calendar-alt-regular.svg" />
-          02.03.2026</span
+          <p>02.03.2026</p></span
         >
       </div>
     </section>
@@ -75,7 +74,7 @@
 
       <form class="portion-input" onsubmit="portions(); return false;">
         <p class="txt">Zutaten für</p>
-        <input id="input" type="number" min="1" max="20" />
+        <input id="input" type="number" min="1" max="20" value="4" />
         <button>
           Portionen
         </button>
