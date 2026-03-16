@@ -11,7 +11,7 @@ let puderzucker = 50;
 function portions() {
     let newValue = document.getElementById("input").value;
 
-    if (neueValue < 1 || newValue > 10) {
+    if (newValue < 1 || newValue > 10) {
         alert("Bitte gib eine Zahl von 1 bis 10 ein.");
         return;
     }

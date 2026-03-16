@@ -22,7 +22,9 @@
       <ul>
         <li><a href="/Kochwelt_2/index.html">Start</a></li>
         <li>
-          <a href="/Kochwelt_2/Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
+          <a href="/Kochwelt_2/Rezept_Dennis/dennis-rezept.html"
+            >Rezept des Tages</a
+          >
         </li>
         <li><a href="/Kochwelt_2/Kontaktformular/contact.html">Kontakt</a></li>
         <li><a href="/Kochwelt_2/Impressum/impressum.html">Impressum</a></li>
@@ -38,7 +40,9 @@
           <div class="navMargin">
             <nav>
               <a id="header-aktiv" href="/index.html">Start</a>
-              <a href="/Kochwelt_2/Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
+              <a href="/Kochwelt_2/Rezept_Dennis/dennis-rezept.html"
+                >Rezept des Tages</a
+              >
               <a href="/Kochwelt_2/Kontaktformular/contact.html">Kontakt</a>
               <a href="/Kochwelt_2/Impressum/impressum.html">Impressum</a>
             </nav>
@@ -74,17 +78,12 @@
     <section class="ingredients-list distance wrapper">
       <div class="seperator"></div>
 
-      <form
-        class="portion-input"
-        onsubmit="
-          portions();
-          return false;
-        "
-      >
+      <section class="portion-input" >
+        
         <p class="txt">Zutaten für</p>
         <input id="input" type="number" min="1" max="20" value="4" />
-        <button>Portionen</button>
-      </form>
+        <button onclick=portions()>Portionen</button>
+      </section>
 
       <ul>
         <li class="list-gray-container">
