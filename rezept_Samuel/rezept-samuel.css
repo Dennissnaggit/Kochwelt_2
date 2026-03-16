@@ -311,9 +311,6 @@ footer {
 
 
 @media (max-width: 1090px) {
-  .navMargin{
-    display: none !important;
-  }
   .noneClassIcon{
     all: unset;
     display: flex;
