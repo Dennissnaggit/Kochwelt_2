@@ -11,6 +11,11 @@ let puderzucker = 50;
 function portions() {
     let newValue = document.getElementById("input").value;
 
+    if (neueValue < 1 || newValue > 10) {
+        alert("Bitte gib eine Zahl von 1 bis 10 ein.");
+        return;
+    } 
+
     let mehlcalc = mehl * newValue;
     let trockenhefecalc = trockenhefe * newValue;
     let zuckercalc = zucker * newValue;
@@ -28,11 +33,6 @@ function portions() {
     document.getElementById("value-6").innerHTML = braunerZuckercalc;
     document.getElementById("value-7").innerHTML = zimtcalc;
     document.getElementById("value-8").innerHTML = puderzuckercalc;
-
-    if (neueValue < 1 || newValue > 10) {
-        alert("Bitte gib eine Zahl von 1 bis 10 ein.");
-        return;
-    }
 }
 
 const hamburgerMenu = document.getElementById("hamburgerMenu");

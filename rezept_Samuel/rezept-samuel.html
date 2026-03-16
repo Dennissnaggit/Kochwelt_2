@@ -31,24 +31,26 @@
     </div>
     <div class="box-shadow">
       <header class="wrapper">
-        <a class="logo-header" href="index.html"
-          ><img src="./img/logo.png" alt="Logo"
-        /></a>
-        <div class="navMargin">
-          <nav>
-            <a id="header-aktiv" href="/index.html">Start</a>
-            <a href="./Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
-            <a href="./Kontaktformular/contact.html">Kontakt</a>
-            <a href="./Impressum/impressum.html">Impressum</a>
-          </nav>
+        <div class="div-header">
+          <a class="logo-header" href="index.html"
+            ><img src="./img/logo.png" alt="Logo"
+          /></a>
+          <div class="navMargin">
+            <nav>
+              <a id="header-aktiv" href="/index.html">Start</a>
+              <a href="./Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
+              <a href="./Kontaktformular/contact.html">Kontakt</a>
+              <a href="./Impressum/impressum.html">Impressum</a>
+            </nav>
+          </div>
+          <button onclick="openClose()" class="noneClassIcon">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <rect y="4" width="24" height="2" fill="black" />
+              <rect y="11" width="24" height="2" fill="black" />
+              <rect y="18" width="24" height="2" fill="black" />
+            </svg>
+          </button>
         </div>
-        <button onclick="openClose()" class="noneClassIcon">
-          <svg width="24" height="24" viewBox="0 0 24 24">
-            <rect y="4" width="24" height="2" fill="black" />
-            <rect y="11" width="24" height="2" fill="black" />
-            <rect y="18" width="24" height="2" fill="black" />
-          </svg>
-        </button>
       </header>
     </div>
 
@@ -60,11 +62,11 @@
         alt="Zimtschnecken-img"
       />
       <div class="rezept-information">
-        <span class="inf-span"><img class="icon" src="./img/clock-regular.svg" /><p>60 Min.</p></span>
-        <span><img class="icon" src="./img/brain-solid.svg" /><p>simple</p></span>
+        <span><img class="icon" src="./img/clock-regular.svg" />60 Min.</span>
+        <span><img class="icon" src="./img/brain-solid.svg" />simple</span>
         <span
           ><img class="icon" src="./img/calendar-alt-regular.svg" />
-          <p>02.03.2026</p></span
+          02.03.2026</span
         >
       </div>
     </section>
@@ -72,39 +74,51 @@
     <section class="ingredients-list distance wrapper">
       <div class="seperator"></div>
 
-      <form class="portion-input" onsubmit="portions(); return false;">
+      <form
+        class="portion-input"
+        onsubmit="
+          portions();
+          return false;
+        "
+      >
         <p class="txt">Zutaten für</p>
         <input id="input" type="number" min="1" max="20" value="4" />
-        <button>
-          Portionen
-        </button>
+        <button>Portionen</button>
       </form>
 
       <ul>
         <li class="list-gray-container">
-          <p id="value-1" class="gray">125</p>g Mehl
+          <p id="value-1" class="gray">125</p>
+          g Mehl
         </li>
         <li>
-          <p id="value-2" class="gray">4</p>g Trockenhefe
+          <p id="value-2" class="gray">4</p>
+          g Trockenhefe
         </li>
         <li class="list-gray-container">
-          <p id="value-3" class="gray">25</p>g Zucker
+          <p id="value-3" class="gray">25</p>
+          g Zucker
         </li>
         <li>
-          <p id="value-4" class="gray">60</p>ml Milch (lauwarm)
+          <p id="value-4" class="gray">60</p>
+          ml Milch (lauwarm)
         </li>
         <li class="list-gray-container">
-          <p id="value-5" class="gray">25</p>g Butter (weich)
+          <p id="value-5" class="gray">25</p>
+          g Butter (weich)
         </li>
         <li>Salz</li>
         <li class="list-gray-container">
-          <p id="value-6" class="gray">30</p>g brauner Zucker
+          <p id="value-6" class="gray">30</p>
+          g brauner Zucker
         </li>
         <li>
-          <p id="value-7" class="gray">2</p>TL Zimt
+          <p id="value-7" class="gray">2</p>
+          TL Zimt
         </li>
         <li class="list-gray-container">
-          <p id="value-8" class="gray">50</p>g Puderzucker
+          <p id="value-8" class="gray">50</p>
+          g Puderzucker
         </li>
       </ul>
     </section>
