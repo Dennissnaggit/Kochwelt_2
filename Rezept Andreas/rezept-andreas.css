@@ -7,7 +7,9 @@ body {
 .below320 {
   display: none;
 }
-
+h2{
+  font-size: 28px;
+}
 /*#endregion*/
 /*#region Klassen für den Header*/
 header {
@@ -76,7 +78,7 @@ nav {
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
-
+  width: 100vw;
   position: fixed;
   top: 0;
   right: 0;
@@ -130,7 +132,7 @@ nav {
 .picture-size {
   max-height: 200px;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 8px;
 }
 
 main {
@@ -167,7 +169,7 @@ main {
   background-color: rgb(239, 239, 239);
   min-height: 32px;
   width: 0 auto;
-  border-radius: 15px;
+  border-radius: 8px;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -185,9 +187,10 @@ main {
 
 .number {
   height: 46px;
-  border-radius: 15px 0px 0px 15px;
+  border-radius: 8px 0px 0px 8px;
   border-color: rgb(237, 237, 237);
   width: 200px;
+  margin-left: 16;
 
 }
 
@@ -233,11 +236,12 @@ li {
 
 li {
   color: rgb(157, 166, 186);
+  height: 34px;
 }
 
 .background-grey {
   background-color: rgb(239, 239, 239);
-  border-radius: 15px;
+  border-radius: 8px;
 }
 
 /*#endregion*/
@@ -306,11 +310,18 @@ footer {
 
 @media (max-width: 690px) {
   header img {
-    height: 40px;
+    height: 64px;
   }
 
   .hero-section {
     padding: 50px 60px;
+  }
+  body{
+    margin: 0;
+  }
+  .wrapper{
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -327,7 +338,7 @@ footer {
 
 @media (max-width:500px) {
   li p {
-    font-size: 8px;
+    
     display: flex;
     flex-direction: column;
   }
@@ -364,19 +375,7 @@ footer {
     margin: 0 auto;
   }
 
-  ul {
-    padding-left: 0;
-    margin: 0;
-    list-style: none;
-  }
 
-  li {
-    flex-direction: column;
-    align-items: flex-start;
-    overflow-wrap: break-word;
-    line-height: 1.4;
-    width: min-content;
-  }
 
 }
 

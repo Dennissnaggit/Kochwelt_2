@@ -1,8 +1,6 @@
 let menge = [75, 125, 1]
 let zutat = ['mehl', 'milch', 'eier']
-/*let today = new Date();
-let formattedDate = today.toLocaleDateString('de-DE');
-document.getElementById('date').innerHTML = formattedDate;*/
+
 
 let hamburgerMenu = document.getElementById("hamburgerMenu");
 
