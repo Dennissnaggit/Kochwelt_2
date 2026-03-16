@@ -182,6 +182,8 @@ p {
   border-color: rgb(239, 239, 239);
   padding: 7px 7px;
   width: 150px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 .btn {
   all: unset;
