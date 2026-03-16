@@ -14,7 +14,7 @@ function portions() {
     if (neueValue < 1 || newValue > 10) {
         alert("Bitte gib eine Zahl von 1 bis 10 ein.");
         return;
-    } 
+    }
 
     let mehlcalc = mehl * newValue;
     let trockenhefecalc = trockenhefe * newValue;
