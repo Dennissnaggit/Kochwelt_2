@@ -340,12 +340,18 @@ footer {
   }
 }
 @media (max-width: 690px) {
+  .properties-items {
+    justify-content: center;
+  }
+  .preperation-icon {
+    justify-content: center;
+  }
   .wrapper {
     padding-left: 20px;
     padding-right: 20px;
   }
   header img {
-    height: 40px;
+    height: 64px;
   }
   .hero-section {
     padding: 50px 60px;
