@@ -40,3 +40,7 @@ const hamburgerMenu = document.getElementById("hamburgerMenu");
 function openClose() {
     hamburgerMenu.classList.toggle("noneClass");
 }
+
+function toggleMenu() {
+    document.getElementById("resp-menu").classList.toggle('resp-menu-closed');
+}
