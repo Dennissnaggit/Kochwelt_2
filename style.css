@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Raleway";
-    src: url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
 }
 
 
@@ -40,10 +40,11 @@ header a:hover {
   text-decoration-thickness: 4px;
   text-underline-offset: 15px;
 }
+
 #header-aktiv {
   color: rgb(0, 128, 0) !important;
   text-decoration: underline !important;
-  text-decoration-thickness: 4px !important; 
+  text-decoration-thickness: 4px !important;
   text-underline-offset: 15px !important;
 }
 
@@ -109,6 +110,7 @@ p {
 .hero-text button {
   margin-bottom: 40px;
 }
+
 .btn-a {
   all: unset;
 }
@@ -203,61 +205,66 @@ footer {
 .noneClass {
   display: none;
 }
-.noneClassIcon{
+
+.noneClassIcon {
   display: none;
 }
+
 .below320 {
   display: none;
 }
+
 .resp-menu-box {
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 350px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    align-items: center;
-    text-decoration: none;
-    gap: 16px;
-    transition: transform 250ms ease-in-out;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 350px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  text-decoration: none;
+  gap: 16px;
+  transition: transform 250ms ease-in-out;
 }
+
 .resp-menu-closed {
-    transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 .close-menu-button {
-    all: unset;
-    padding: 8px 34px;
-    background-color: #008000;
-    color: white;
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
-    cursor: pointer;
+  all: unset;
+  padding: 8px 34px;
+  background-color: #008000;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 
 main {
-    position: relative;
-    overflow-x: hidden;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .menu-button {
-    display: none;
-    border: none;
-    background-color: transparent;
+  display: none;
+  border: none;
+  background-color: transparent;
 }
 
 .menu-img {
-    height: 56px;
+  height: 56px;
 }
 
 @media (max-width: 1090px) {
-  .navMargin{
+  .navMargin {
     display: none !important;
   }
-  .noneClassIcon{
+
+  .noneClassIcon {
     all: unset;
     display: flex;
     justify-content: center;
@@ -268,51 +275,70 @@ main {
     cursor: pointer;
   }
 
-      .menu-button {
-        display: block;
-        cursor: pointer;
-    }
+  .menu-button {
+    display: block;
+    cursor: pointer;
+  }
 
-    .navMargin {
-        margin-bottom: auto;
-    }
+  .navMargin {
+    margin-bottom: auto;
+  }
 
-    #header-aktiv {
-        text-decoration: none !important;
-    }
+  #header-aktiv {
+    text-decoration: none !important;
+  }
 
-    header a:hover {
-        text-decoration: none !important;
-    }
+  header a:hover {
+    text-decoration: none !important;
+  }
 }
+
 @media (max-width: 950px) {
   .hero-section {
     flex-direction: column;
   }
+
   .recipe-items {
     flex-direction: column;
     align-items: center;
   }
+
   .align-article {
     flex-direction: column-reverse;
     align-items: center;
   }
+
+  footer {
+    flex-direction: column;
+    padding: 20px;
+    gap: 16px;
+    align-items: center;
+  }
+
 }
+
 @media (max-width: 690px) {
   header img {
-    height: 40px;
+    height: 64px;
   }
+
   .hero-section {
     padding: 50px 60px;
   }
+
   .wrapper {
     padding: 0 20px;
   }
-  .footerClass {
-    display: flex;
-    flex-direction: column;
-  }
 }
+
+@media (max-width: 500px) {
+      .sozial-media-logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media (max-width: 320px) {
   .below320 {
     display: flex;
@@ -320,15 +346,19 @@ main {
     justify-content: center;
     align-items: center;
   }
+
   .box-shadow {
     display: none;
   }
+
   .bg-grey {
     display: none;
   }
+
   .hero-section {
     display: none;
   }
+
   .wrapper {
     display: none;
   }

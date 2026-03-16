@@ -54,16 +54,16 @@ nav {
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   height: 350px;
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: 0;
   left: 0;
   align-items: center;
-  text-decoration: none;
+  justify-content: center;
   gap: 16px;
-  transition: all 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  z-index: 999;
 }
 
 .close-menu-button {
@@ -77,12 +77,13 @@ nav {
 }
 
 .resp-menu-closed {
-  transform: translateX(200%);
+  transform: translateX(100%);
 }
 .menu-button {
   display: none;
   border: none;
   background-color: transparent;
+  padding: 0;
 }
 
 .menu-img {
@@ -181,6 +182,8 @@ p {
   border-color: rgb(239, 239, 239);
   padding: 7px 7px;
   width: 150px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 .btn {
   all: unset;
@@ -303,39 +306,7 @@ footer {
 .sozial-media-logos {
   align-items: center;
 }
-.hamburger {
-  position: absolute;
-  right: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-}
-.hamburger img {
-  display: flex;
-  width: 200px;
-}
-.hamburger ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-}
-.hamburger li {
-  all: unset;
-  padding-bottom: 20px;
-}
-.hamburger a {
-  all: unset;
-}
-.noneClass {
-  display: none;
-}
-.noneClassIcon {
-  display: none;
-}
+
 @media (max-width: 1090px) {
   nav {
     display: none;
@@ -371,12 +342,18 @@ footer {
   }
 }
 @media (max-width: 690px) {
+  .properties-items {
+    justify-content: center;
+  }
+  .preperation-icon {
+    justify-content: center;
+  }
   .wrapper {
     padding-left: 20px;
     padding-right: 20px;
   }
   header img {
-    height: 40px;
+    height: 64px;
   }
   .hero-section {
     padding: 50px 60px;
@@ -384,6 +361,13 @@ footer {
   .wrapper_1 {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .sozial-media-logos {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerclass {
+    align-items: center;
   }
 }
 @media (max-width: 320px) {
