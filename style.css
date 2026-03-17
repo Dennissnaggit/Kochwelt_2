@@ -338,28 +338,3 @@ main {
         align-items: center;
     }
 }
-
-@media (max-width: 320px) {
-  .below320 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .box-shadow {
-    display: none;
-  }
-
-  .bg-grey {
-    display: none;
-  }
-
-  .hero-section {
-    display: none;
-  }
-
-  .wrapper {
-    display: none;
-  }
-}

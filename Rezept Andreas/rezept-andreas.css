@@ -4,9 +4,6 @@ body {
   margin: 0;
 }
 
-.below320 {
-  display: none;
-}
 h2{
   font-size: 28px;
 }
@@ -379,25 +376,5 @@ footer {
 
 }
 
-@media (max-width: 320px) {
-  .wrapper {
-    display: none;
-  }
-
-  .below320 {
-    display: flex;
-    margin: 20px;
-    text-align: center;
-  }
-
-  .box-shadow {
-    display: none;
-  }
-
-  .bg-footer {
-    display: none;
-  }
-
-}
 
 /*#endregion*/

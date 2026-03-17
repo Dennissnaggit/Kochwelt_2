@@ -370,22 +370,7 @@ footer {
     align-items: center;
   }
 }
-@media (max-width: 320px) {
-  .wrapper {
-    display: none;
-  }
-  .below320 {
-    display: flex;
-    margin: 20px;
-    text-align: center;
-  }
-  .box-shadow {
-    display: none;
-  }
-  .bg-footer {
-    display: none;
-  }
-}
+
 @media (max-width: 500px) {
   .properties-dennis {
     flex-direction: column;
