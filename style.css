@@ -332,9 +332,13 @@ main {
 }
 
 @media (max-width: 500px) {
-      .sozial-media-logos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .sozial-media-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-img {
+    height: 43px;
+  }
 }
