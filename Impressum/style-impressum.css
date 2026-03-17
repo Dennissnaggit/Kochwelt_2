@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Raleway";
-  src: url("fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+  src: url("../fonts/Raleway-VariableFont_wght.ttf") format("truetype");
 }
 
 body {
@@ -129,19 +129,6 @@ footer {
   text-decoration: none;
 }
 
-@media (max-width: 320px) {
-  .wrapper {
-    display: none;
-  }
-  .below320 {
-    display: flex;
-    margin: 20px;
-    text-align: center;
-  }
-  .display-none {
-    display: none;
-  }
-}
 @media (max-width: 500px) {
   .properties-dennis {
     flex-direction: column;

@@ -151,7 +151,7 @@ input {
     cursor: pointer;
 }
 
-button-calculate:hover {
+.button-calculate:hover {
     background-color: #006e00;
 }
 
@@ -278,6 +278,11 @@ main {
     height: 56px;
 }
 
+#incorrect {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
 @media (max-width: 1100px) {
 
     nav {
@@ -349,5 +354,25 @@ main {
 
     .menu-img {
         height: 48px;
+    }
+}
+
+@media (max-width: 390px) {
+    #incorrect {
+        text-align: center;
+    }
+}
+
+@media (max-width: 370px) {
+    form {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .ingredients {
+        display: inline-block;
+        display: flex;
+        flex-direction: column;
     }
 }

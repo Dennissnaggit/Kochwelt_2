@@ -4,9 +4,6 @@ body {
   margin: 0;
 }
 
-.below320 {
-  display: none;
-}
 h2{
   font-size: 28px;
 }

@@ -15,6 +15,8 @@
     max-width: 1440px;
     margin: 0 auto;
     align-items: center;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 body {
     margin: 0;
@@ -109,7 +111,7 @@ nav {
     }
 
     .menu-button {
-        display: block;
+        display: contents;
         cursor: pointer;
     }
 
@@ -141,6 +143,15 @@ nav {
   .footerClass {
     display: flex;
     flex-direction: column;
+  }
+
+  .wrapper1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  header img {
+    height: 64px;
   }
 }
 
@@ -296,6 +307,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 20px 120px;
+  align-items: center;
 }
 
 .bg-footer {
@@ -332,6 +344,12 @@ footer {
     .distance {
         padding-left: 100px;
         padding-right: 100px;
+    }
+}
+
+@media (max-width: 707px) {
+    span {
+        font-size: 18px;
     }
 }
 
@@ -375,6 +393,19 @@ footer {
     }
 }
 
+@media (max-width: 500px) {
+    .wrapper1 {
+        padding: 0 20px 0 8px;
+  }
+
+.sozial-media-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+}
+
 @media (max-width: 446px) {
 
     h1 {
@@ -389,6 +420,18 @@ footer {
 
     span {
         display: flex;
+        font-size: 15px;
+    }
+
+    .distance {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper1 {
+        padding-right: 10px;
     }
 }
 
@@ -409,14 +452,7 @@ footer {
         font-size: 15px;
     }
 
-    .distance {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-
-@media (max-width: 320px) {
-    body {
-        display: none;
+    span {
+        font-size: 13px;
     }
 }
