@@ -11,13 +11,13 @@ function ingredientsOutput() {
       let ingredient = ingredients[i];
       newArray.push(ingredient * multiply.value);
     }
-    document.getElementById("value0").innerHTML = newArray[0];
-    document.getElementById("value1").innerHTML = newArray[1];
-    document.getElementById("value2").innerHTML = newArray[2];
-    document.getElementById("value3").innerHTML = newArray[3];
-    document.getElementById("value4").innerHTML = newArray[4];
-    document.getElementById("value5").innerHTML = newArray[5];
-    document.getElementById("value6").innerHTML = newArray[6];
+    document.getElementById("garlic").innerHTML = newArray[0];
+    document.getElementById("mayo").innerHTML = newArray[1];
+    document.getElementById("quark").innerHTML = newArray[2];
+    document.getElementById("salt").innerHTML = newArray[3];
+    document.getElementById("sugar").innerHTML = newArray[4];
+    document.getElementById("sauce").innerHTML = newArray[5];
+    document.getElementById("tabasco").innerHTML = newArray[6];
   } else {
     document.getElementById("incorrect").innerHTML =
       "Bitte einen Wert zwischen 1 und 20 angeben";
