@@ -7,7 +7,8 @@ function ingredientsOutput() {
     document.getElementById("incorrect").innerHTML = ""
     if (multiply.value >=1 && multiply.value <=20) {
     newArray.length = 0;
-for (const ingredient of ingredients) {
+for (let i = 0; i <= ingredients.length ; i++) {
+    let ingredient = ingredients[i];
     newArray.push(ingredient * multiply.value);
 }
     document.getElementById("value0").innerHTML = newArray[0];
