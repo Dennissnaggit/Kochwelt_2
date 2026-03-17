@@ -1,11 +1,11 @@
-let mehl = 125;
-let trockenhefe = 4;
-let zucker = 25;
-let milch = 60;
+let flour = 125;
+let dryYeast = 4;
+let sugar = 25;
+let milk = 60;
 let butter = 25;
-let braunerZucker = 30;
-let zimt = 2;
-let puderzucker = 50;
+let brownSugar = 30;
+let cinnamon = 2;
+let powderedSuga = 50;
 
 
 function portions() {
@@ -16,23 +16,23 @@ function portions() {
         return;
     }
 
-    let mehlcalc = mehl * newValue;
-    let trockenhefecalc = trockenhefe * newValue;
-    let zuckercalc = zucker * newValue;
-    let milchcalc = milch * newValue;
-    let butterclac = butter * newValue;
-    let braunerZuckercalc = braunerZucker * newValue;
-    let zimtcalc = zimt * newValue;
-    let puderzuckercalc = puderzucker * newValue;
+    let flourCalc = flour * newValue;
+    let dryYeastCalc = dryYeast * newValue;
+    let sugarCalc = sugar * newValue;
+    let milkCalc = milk * newValue;
+    let butterClac = butter * newValue;
+    let brownSugarClac = brownSugar * newValue;
+    let cinnamonCalc = cinnamon * newValue;
+    let powderedSugaCalc = powderedSuga * newValue;
 
-    document.getElementById("value-1").innerHTML = mehlcalc;
-    document.getElementById("value-2").innerHTML = trockenhefecalc;
-    document.getElementById("value-3").innerHTML = zuckercalc;
-    document.getElementById("value-4").innerHTML = milchcalc;
-    document.getElementById("value-5").innerHTML = butterclac;
-    document.getElementById("value-6").innerHTML = braunerZuckercalc;
-    document.getElementById("value-7").innerHTML = zimtcalc;
-    document.getElementById("value-8").innerHTML = puderzuckercalc;
+    document.getElementById("flour1").innerHTML = flourCalc;
+    document.getElementById("dryYeast2").innerHTML = dryYeastCalc;
+    document.getElementById("sugar3").innerHTML = sugarCalc;
+    document.getElementById("milk4").innerHTML = milkCalc;
+    document.getElementById("butter5").innerHTML = butterClac;
+    document.getElementById("brownSugar6").innerHTML = brownSugarClac;
+    document.getElementById("cinnamon7").innerHTML = cinnamonCalc;
+    document.getElementById("powderedSuga8").innerHTML = powderedSugaCalc;
 }
 
 const hamburgerMenu = document.getElementById("hamburgerMenu");
