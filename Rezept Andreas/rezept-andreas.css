@@ -213,11 +213,11 @@ li {
   display: flex;
   align-items: center;
   padding-left: 32px;
-  height: 55px;
+  height: 34px;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  color: #716A6E;
+  color: rgb(0, 0, 0);
   gap: 8px;
 }
 
@@ -234,10 +234,7 @@ li {
   border-radius: 50px;
 }
 
-li {
-  color: rgb(157, 166, 186);
-  height: 34px;
-}
+
 
 .background-grey {
   background-color: rgb(239, 239, 239);
@@ -379,25 +376,6 @@ footer {
 
 }
 
-@media (max-width: 320px) {
-  .wrapper {
-    display: none;
-  }
 
-  .below320 {
-    display: flex;
-    margin: 20px;
-    text-align: center;
-  }
-
-  .box-shadow {
-    display: none;
-  }
-
-  .bg-footer {
-    display: none;
-  }
-
-}
 
 /*#endregion*/
