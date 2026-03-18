@@ -18,6 +18,10 @@ header {
   padding-right: 120px;
 }
 
+#wrongValue {
+  color: red;
+}
+
 .box-shadow {
   box-shadow: 0 0 5px 0 rgb(0, 0, 0, 0.2);
 }

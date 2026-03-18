@@ -574,3 +574,22 @@ footer {
     height: 48px;
   }
 }
+.sendEmail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.sendEmail button {
+  all: unset;
+  cursor: pointer;
+  background-color: rgb(49, 124, 26);
+  color: white;
+  text-align: center;
+  width: 200px;
+  padding: 8px 12px;
+}
+.sendEmail a {
+  all: unset;
+}

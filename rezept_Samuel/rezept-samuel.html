@@ -1,175 +1,160 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="/Kochwelt_2/img/logo_small.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Zimtschnecken</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="/img/logo_small.png" />
 
-    <link rel="stylesheet" href="rezept-samuel.css" />
-  </head>
-  <body>
-    <div class="box-shadow">
-      <header class="wrapper1">
-        <a class="logo-header" href="../index.html"
-          ><img src="../img/logo.png" alt="Logo"
-        /></a>
+  <title>Zimtschnecken</title>
 
-        <div class="navMargin">
-          <nav>
-            <a href="../index.html">Start</a>
-            <a href="../Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
-            <a href="../Kontaktformular/contact.html">Kontakt</a>
-            <a href="../Impressum/impressum.html">Impressum</a>
-          </nav>
+  <link rel="stylesheet" href="rezept-samuel.css" />
+</head>
 
-          <button onclick="toggleMenu()" class="menu-button">
-            <img class="menu-img" src="../img/menu.png" alt="" />
+<body>
+  <div class="box-shadow">
+    <header class="wrapper1">
+      <a class="logo-header" href="../index.html"><img src="../img/logo.png" alt="Logo" /></a>
+
+      <div class="navMargin">
+        <nav>
+          <a href="../index.html">Start</a>
+          <a href="../Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
+          <a href="../Kontaktformular/contact.html">Kontakt</a>
+          <a href="../Impressum/impressum.html">Impressum</a>
+        </nav>
+
+        <button onclick="toggleMenu()" class="menu-button">
+          <img class="menu-img" src="../img/menu.png" alt="" />
+        </button>
+
+        <div id="resp-menu" class="resp-menu-box resp-menu-closed">
+          <img src="./img/logo.png" alt="logo" />
+          <a id="header-aktiv" href="../index.html">Start</a>
+          <a href="../Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
+          <a href="../Kontaktformular/contact.html">Kontakt</a>
+          <a href="../Impressum/impressum.html">Impressum</a>
+          <button class="close-menu-button" onclick="toggleMenu()">
+            Close Menu
           </button>
-
-          <div id="resp-menu" class="resp-menu-box resp-menu-closed">
-            <img src="./img/logo.png" alt="logo" />
-            <a id="header-aktiv" href="../index.html">Start</a>
-            <a href="../Rezept_Dennis/dennis-rezept.html">Rezept des Tages</a>
-            <a href="../Kontaktformular/contact.html">Kontakt</a>
-            <a href="../Impressum/impressum.html">Impressum</a>
-            <button class="close-menu-button" onclick="toggleMenu()">
-              Close Menu
-            </button>
-          </div>
         </div>
-      </header>
+      </div>
+    </header>
+  </div>
+
+  <section class="hero distance wrapper">
+    <h1>Zimtschnecken</h1>
+    <img class="rezept-img" src="./img/lum3n-pastries-2208050_1280.jpg" alt="Zimtschnecken-img" />
+    <div class="rezept-information">
+      <span><img class="icon" src="./img/clock-regular.svg" />60 Min.</span>
+      <span><img class="icon" src="./img/brain-solid.svg" />simple</span>
+      <span><img class="icon" src="./img/calendar-alt-regular.svg" />
+        02.03.2026</span>
     </div>
+  </section>
 
-    <section class="hero distance wrapper">
-      <h1>Zimtschnecken</h1>
-      <img
-        class="rezept-img"
-        src="./img/lum3n-pastries-2208050_1280.jpg"
-        alt="Zimtschnecken-img"
-      />
-      <div class="rezept-information">
-        <span><img class="icon" src="./img/clock-regular.svg" />60 Min.</span>
-        <span><img class="icon" src="./img/brain-solid.svg" />simple</span>
-        <span
-          ><img class="icon" src="./img/calendar-alt-regular.svg" />
-          02.03.2026</span
-        >
-      </div>
+  <section class="ingredients-list distance wrapper">
+    <div class="seperator"></div>
+
+    <section class="portion-input">
+      <p class="txt">Zutaten für</p>
+      <input id="input" type="number" min="1" max="20" value="4" />
+      <button onclick="portions()">Portionen</button>
     </section>
 
-    <section class="ingredients-list distance wrapper">
-      <div class="seperator"></div>
+    <aside id="incorrect"></aside>
 
-      <section class="portion-input">
-        <p class="txt">Zutaten für</p>
-        <input id="input" type="number" min="1" max="20" value="4" />
-        <button onclick="portions()">Portionen</button>
-      </section>
+    <ul>
+      <li class="list-gray-container">
+        <p id="flour1" class="gray">125</p>
+        g Mehl
+      </li>
+      <li>
+        <p id="dryYeast2" class="gray">4</p>
+        g Trockenhefe
+      </li>
+      <li class="list-gray-container">
+        <p id="sugar3" class="gray">25</p>
+        g Zucker
+      </li>
+      <li>
+        <p id="milk4" class="gray">60</p>
+        ml Milch (lauwarm)
+      </li>
+      <li class="list-gray-container">
+        <p id="butter5" class="gray">25</p>
+        g Butter (weich)
+      </li>
+      <li>Salz</li>
+      <li class="list-gray-container">
+        <p id="brownSugar6" class="gray">30</p>
+        g brauner Zucker
+      </li>
+      <li>
+        <p id="cinnamon7" class="gray">2</p>
+        TL Zimt
+      </li>
+      <li class="list-gray-container">
+        <p id="powderedSuga8" class="gray">50</p>
+        g Puderzucker
+      </li>
+    </ul>
+  </section>
 
-      <ul>
-        <li class="list-gray-container">
-          <p id="flour1" class="gray">125</p>
-          g Mehl
-        </li>
-        <li>
-          <p id="dryYeast2" class="gray">4</p>
-          g Trockenhefe
-        </li>
-        <li class="list-gray-container">
-          <p id="sugar3" class="gray">25</p>
-          g Zucker
-        </li>
-        <li>
-          <p id="milk4" class="gray">60</p>
-          ml Milch (lauwarm)
-        </li>
-        <li class="list-gray-container">
-          <p id="butter5" class="gray">25</p>
-          g Butter (weich)
-        </li>
-        <li>Salz</li>
-        <li class="list-gray-container">
-          <p id="brownSugar6" class="gray">30</p>
-          g brauner Zucker
-        </li>
-        <li>
-          <p id="cinnamon7" class="gray">2</p>
-          TL Zimt
-        </li>
-        <li class="list-gray-container">
-          <p id="powderedSuga8" class="gray">50</p>
-          g Puderzucker
-        </li>
-      </ul>
-    </section>
-
-    <section class="distance wrapper">
-      <h2>Zubereitung</h2>
-      <div class="preparation-infprmation">
-        <span
-          ><img class="icon" src="./img/clock-regular.svg" />Ca. 60
-          Minuten</span
-        >
-        <span
-          ><img class="icon" src="./img/clock-regular.svg" />Gesamtzeit Ca. 60
-          Minuten</span
-        >
-      </div>
-      <p class="rezept-txt">
-        Für eine kleine Portion Zimtschnecken gibst du zuerst das Mehl, den
-        Zucker, die Trockenhefe und eine Prise Salz in eine Schüssel und
-        vermischst alles kurz. Danach erwärmst du die Milch leicht, sodass sie
-        nur lauwarm ist, und gibst sie zusammen mit der weichen Butter zu den
-        trockenen Zutaten. Knete alles einige Minuten zu einem glatten Teig.
-        Decke die Schüssel anschließend ab und lasse den Teig etwa 30 bis 60
-        Minuten gehen, bis er etwas aufgegangen ist. Anschließend rollst du den
-        Teig auf einer leicht bemehlten Fläche zu einem Rechteck aus. Bestreiche
-        den Teig mit der weichen Butter und verteile den braunen Zucker sowie
-        den Zimt gleichmäßig darauf. Danach rollst du den Teig von der langen
-        Seite her vorsichtig auf, sodass eine Rolle entsteht. Schneide die Rolle
-        anschließend in etwa zwei bis drei Stücke. Lege die Zimtschnecken auf
-        ein mit Backpapier belegtes Blech und backe sie im vorgeheizten Ofen bei
-        etwa 180 °C für ungefähr 15 bis 20 Minuten, bis sie goldbraun sind. Wenn
-        du möchtest, kannst du zum Schluss noch eine Glasur aus Puderzucker und
-        etwas Milch anrühren und über die noch warmen Zimtschnecken geben.
-      </p>
-    </section>
-
-    <section class="distance wrapper">
-      <h3>Rezept erstellt von</h3>
-      <div class="profile-container">
-        <img src="./img/profile.png" alt="profile" />
-        <p class="profile-name">Samuel</p>
-      </div>
-    </section>
-
-    <div class="bg-footer">
-      <footer class="footerClass">
-        <div>
-          <a href="./index.html"><img src="../img/logo-blk.PNG" alt="logo" /></a>
-        </div>
-        <div class="sozial-media-logos">
-          <a href=""
-            ><img class="sozial-media" src="../img/Facebook.PNG" alt=""
-          /></a>
-          <a href=""
-            ><img class="sozial-media" src="../img/Insta.PNG" alt=""
-          /></a>
-          <a href=""
-            ><img class="sozial-media" src="../img/Twitter.PNG" alt=""
-          /></a>
-        </div>
-      </footer>
+  <section class="distance wrapper">
+    <h2>Zubereitung</h2>
+    <div class="preparation-infprmation">
+      <span><img class="icon" src="./img/clock-regular.svg" />Ca. 60
+        Minuten</span>
+      <span><img class="icon" src="./img/clock-regular.svg" />Gesamtzeit Ca. 60
+        Minuten</span>
     </div>
-  </body>
-  <script src="rezept-samuel.js"></script>
+    <p class="rezept-txt">
+      Für eine kleine Portion Zimtschnecken gibst du zuerst das Mehl, den
+      Zucker, die Trockenhefe und eine Prise Salz in eine Schüssel und
+      vermischst alles kurz. Danach erwärmst du die Milch leicht, sodass sie
+      nur lauwarm ist, und gibst sie zusammen mit der weichen Butter zu den
+      trockenen Zutaten. Knete alles einige Minuten zu einem glatten Teig.
+      Decke die Schüssel anschließend ab und lasse den Teig etwa 30 bis 60
+      Minuten gehen, bis er etwas aufgegangen ist. Anschließend rollst du den
+      Teig auf einer leicht bemehlten Fläche zu einem Rechteck aus. Bestreiche
+      den Teig mit der weichen Butter und verteile den braunen Zucker sowie
+      den Zimt gleichmäßig darauf. Danach rollst du den Teig von der langen
+      Seite her vorsichtig auf, sodass eine Rolle entsteht. Schneide die Rolle
+      anschließend in etwa zwei bis drei Stücke. Lege die Zimtschnecken auf
+      ein mit Backpapier belegtes Blech und backe sie im vorgeheizten Ofen bei
+      etwa 180 °C für ungefähr 15 bis 20 Minuten, bis sie goldbraun sind. Wenn
+      du möchtest, kannst du zum Schluss noch eine Glasur aus Puderzucker und
+      etwas Milch anrühren und über die noch warmen Zimtschnecken geben.
+    </p>
+  </section>
+
+  <section class="distance wrapper">
+    <h3>Rezept erstellt von</h3>
+    <div class="profile-container">
+      <img src="./img/profile.png" alt="profile" />
+      <p class="profile-name">Samuel</p>
+    </div>
+  </section>
+
+  <div class="bg-footer">
+    <footer class="footerClass">
+      <div>
+        <a href="./index.html"><img src="../img/logo-blk.PNG" alt="logo" /></a>
+      </div>
+      <div class="sozial-media-logos">
+        <a href=""><img class="sozial-media" src="../img/Facebook.PNG" alt="" /></a>
+        <a href=""><img class="sozial-media" src="../img/Insta.PNG" alt="" /></a>
+        <a href=""><img class="sozial-media" src="../img/Twitter.PNG" alt="" /></a>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="rezept-samuel.js"></script>
+
 </html>
