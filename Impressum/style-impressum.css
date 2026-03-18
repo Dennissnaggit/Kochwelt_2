@@ -83,7 +83,7 @@ p {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  color: rgb(157, 166, 186);
+  color: black;
 }
 .below320 {
   display: none;
