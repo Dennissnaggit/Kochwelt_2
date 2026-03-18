@@ -1,5 +1,5 @@
 let menge = [75, 125, 1]
-let zutat = ['mehl', 'milch', 'eier']
+let zutat = ['flour', 'milk', 'eggs']
 
 
 let hamburgerMenu = document.getElementById("hamburgerMenu");
