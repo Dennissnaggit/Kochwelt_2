@@ -13,9 +13,9 @@ let cream = 0.5;
 
 
 function calculate() {
-    let neuePortionen = document.getElementById("portions").value;
+    let newPortions = document.getElementById("portions").value;
 
-    if (neuePortionen < 1 || neuePortionen > 10) {
+    if (newPortions < 1 || newPortions > 10) {
         document.getElementById("incorrect").innerHTML =
             "Bitte einen Wert zwischen 1 und 10 angeben";
     }
@@ -25,15 +25,15 @@ function calculate() {
     }
 
 
-    let carrotsNew = carrots * neuePortionen;
-    let potatoesNew = potatoes * neuePortionen;
-    let onionsNew = onions * neuePortionen;
-    let butterNew = butter * neuePortionen;
-    let brothNew = broth * neuePortionen;
-    let sausageNew = sausage * neuePortionen;
-    let oilNew = oil * neuePortionen;
-    let parsleyNew = parsley * neuePortionen;
-    let creamNew = cream * neuePortionen;
+    let carrotsNew = carrots * newPortions;
+    let potatoesNew = potatoes * newPortions;
+    let onionsNew = onions * newPortions;
+    let butterNew = butter * newPortions;
+    let brothNew = broth * newPortions;
+    let sausageNew = sausage * newPortions;
+    let oilNew = oil * newPortions;
+    let parsleyNew = parsley * newPortions;
+    let creamNew = cream * newPortions;
 
     document.getElementById("value1").innerHTML = carrotsNew;
     document.getElementById("value2").innerHTML = potatoesNew;
