@@ -11,9 +11,14 @@ let powderedSuga = 50;
 function portions() {
     let newValue = document.getElementById("input").value;
 
+
     if (newValue < 1 || newValue > 10) {
-        alert("Bitte gib eine Zahl von 1 bis 10 ein.");
-        return;
+        document.getElementById("incorrect").innerHTML =
+            "Bitte einen Wert zwischen 1 und 10 angeben";
+    }
+
+    else {
+        document.getElementById("incorrect").innerHTML = "";
     }
 
     let flourCalc = flour * newValue;

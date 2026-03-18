@@ -18,6 +18,13 @@
     padding-left: 120px;
     padding-right: 120px;
 }
+
+#incorrect {
+    color: red;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
 body {
     margin: 0;
     font-family: "Raleway", sans-serif;
